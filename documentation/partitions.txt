@@ -1,0 +1,12 @@
+The 0 disk name = bootloader	/dev/block/nanda
+The 1 disk name = env		/dev/block/nandb
+The 2 disk name = boot		/dev/block/nandc
+The 3 disk name = system	/dev/block/nandd
+The 4 disk name = data		/dev/block/nande
+The 5 disk name = misc		/dev/block/nandf
+The 6 disk name = recovery	/dev/block/nandg
+The 7 disk name = cache		/dev/block/nandh
+The 8 disk name = private	/dev/block/nandi
+The 9 disk name = sysrecovery	/dev/block/nandj
+The 10 disk name = UDISK	/dev/block/nandk
+

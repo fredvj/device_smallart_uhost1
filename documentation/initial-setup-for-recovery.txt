@@ -1,0 +1,10 @@
+fredvj@fredvj-ThinkPad-Edge:~/cyanogenmod-ics$ ./build/tools/device/mkvendor.sh smallart uboot1 ~/joy-it/boot.img 
+Arguments: smallart uboot1 /home/fredvj/joy-it/boot.img
+Output will be in /home/fredvj/cyanogenmod-ics/device/smallart/uboot1
+7754 blocks
+Done!
+Use the following command to set up your build environment:
+  lunch full_uboot1-eng
+And use the follwowing command to build a recovery:
+  . build/tools/device/makerecoveries.sh full_uboot1-eng
+

@@ -1,0 +1,856 @@
+<5>[    0.000000] Linux version 3.0.8 (release@saserver) (gcc version 4.5.1 (Sourcery G++ Lite 2010.09-50) ) #1 PREEMPT Thu Oct 18 08:48:04 EDT 2012
+<7>[    0.000000] CPU: ARMv7 Processor [413fc082] revision 2 (ARMv7), cr=10c53c7f
+<7>[    0.000000] CPU: VIPT nonaliasing data cache, VIPT aliasing instruction cache
+<7>[    0.000000] Machine: sun4i
+<6>[    0.000000] Total Detected Memory: 1024MB with 2 banks
+<6>[    0.000000] Memory Reserved(in bytes):
+<6>[    0.000000] 	LCD: 0x5a000000, 0x02000000
+<6>[    0.000000] 	SYS: 0x43000000, 0x00010000
+<6>[    0.000000] 	G2D: 0x58000000, 0x01000000
+<6>[    0.000000] 	VE : 0x44000000, 0x05000000
+<6>[    0.000000] 	VE : 0x49000000, 0x01000000
+<7>[    0.000000] Memory policy: ECC disabled, Data cache writeback
+<7>[    0.000000] On node 0 totalpages: 245760
+<7>[    0.000000] free_area_init_node: node 0, pgdat c0805688, node_mem_map c1046000
+<7>[    0.000000]   Normal zone: 1280 pages used for memmap
+<7>[    0.000000]   Normal zone: 0 pages reserved
+<7>[    0.000000]   Normal zone: 146176 pages, LIFO batch:31
+<7>[    0.000000]   HighMem zone: 768 pages used for memmap
+<7>[    0.000000]   HighMem zone: 97536 pages, LIFO batch:31
+<7>[    0.000000] pcpu-alloc: s0 r0 d32768 u32768 alloc=1*32768
+<7>[    0.000000] pcpu-alloc: [0] 0 
+<7>[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 243712
+<5>[    0.000000] Kernel command line: console=ttyS0,115200 root=/dev/nanddinit=/init loglevel=8
+<6>[    0.000000] PID hash table entries: 4096 (order: 2, 16384 bytes)
+<6>[    0.000000] Dentry cache hash table entries: 131072 (order: 7, 524288 bytes)
+<6>[    0.000000] Inode-cache hash table entries: 65536 (order: 6, 262144 bytes)
+<6>[    0.000000] Memory: 448MB 512MB = 960MB total
+<5>[    0.000000] Memory: 833072k/833072k available, 149968k reserved, 393216K highmem
+<5>[    0.000000] Virtual kernel memory layout:
+<5>[    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+<5>[    0.000000]     fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+<5>[    0.000000]     DMA     : 0xffc00000 - 0xffe00000   (   2 MB)
+<5>[    0.000000]     vmalloc : 0xe8800000 - 0xf0000000   ( 120 MB)
+<5>[    0.000000]     lowmem  : 0xc0000000 - 0xe8000000   ( 640 MB)
+<5>[    0.000000]     pkmap   : 0xbfe00000 - 0xc0000000   (   2 MB)
+<5>[    0.000000]     modules : 0xbf000000 - 0xbfe00000   (  14 MB)
+<5>[    0.000000]       .init : 0xc0008000 - 0xc0031000   ( 164 kB)
+<5>[    0.000000]       .text : 0xc0031000 - 0xc07b92c4   (7713 kB)
+<5>[    0.000000]       .data : 0xc07ba000 - 0xc080f960   ( 343 kB)
+<5>[    0.000000]        .bss : 0xc080f984 - 0xc09cabb8   (1773 kB)
+<6>[    0.000000] SLUB: Genslabs=11, HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+<6>[    0.000000] NR_IRQS:96 nr_irqs:96 96
+<6>[    0.000000] timer0: Periodic Mode
+<7>[    0.000000] sw_timer_init,line:397
+<6>[    0.000000] sched_clock: 32 bits at 24MHz, resolution 41ns, wraps every 178956ms
+<7>[    0.000000] aw_clksrc_init, line:338
+<6>[    0.000000] Console: colour dummy device 80x30
+<6>[    0.000105] Calibrating delay loop... 1001.88 BogoMIPS (lpj=5009408)
+<6>[    0.040019] pid_max: default: 32768 minimum: 301
+<6>[    0.040150] Mount-cache hash table entries: 512
+<6>[    0.040441] CPU: Testing write buffer coherency: ok
+<6>[    0.040627] hw perfevents: enabled with ARMv7 Cortex-A8 PMU driver, 5 counters available
+<6>[    0.041078] devtmpfs: initialized
+<6>[    0.042346] print_constraints: dummy: 
+<6>[    0.042483] NET: Registered protocol family 16
+<6>[    0.043025] hw-breakpoint: debug architecture 0x4 unsupported.
+<7>[    0.043523] SOFTWINNER DMA Driver, (c) 2003-2004,2006 Simtec Electronics
+<6>[    0.043585] Initialize DMAC OK
+<6>[    0.049227] bio: create slab <bio-0> at 0
+<5>[    0.049796] SCSI subsystem initialized
+<7>[    0.049867] libata version 3.00 loaded.
+<6>[    0.050000] usbcore: registered new interface driver usbfs
+<6>[    0.050000] usbcore: registered new interface driver hub
+<6>[    0.050000] usbcore: registered new device driver usb
+<6>[    0.050000] Advanced Linux Sound Architecture Driver Version 1.0.24.
+<6>[    0.050000] Bluetooth: Core ver 2.16
+<6>[    0.050000] NET: Registered protocol family 31
+<6>[    0.050000] Bluetooth: HCI device and connection manager initialized
+<6>[    0.050000] Bluetooth: HCI socket layer initialized
+<6>[    0.050000] Bluetooth: L2CAP socket layer initialized
+<6>[    0.050000] Bluetooth: SCO socket layer initialized
+<6>[    0.050000] cfg80211: Calling CRDA to update world regulatory domain
+<7>[    0.050000] Init eGon pin module V2.0
+<6>[    0.050000] Switching to clocksource aw 64bits couter
+<5>[    0.050000] FS-Cache: Loaded
+<6>[    0.050000] CacheFiles: Loaded
+<6>[    0.050000] Switched to NOHz mode on CPU #0
+<7>[    0.050000] [usb_manager]: CONFIG_USB_SW_SUN4I_USB0_OTG
+<7>[    0.050000] [sw_hcd0]: usb host driver initialize........
+<7>[    0.050000] [sw_udc]: udc_init: version 20080411
+<7>[    0.050000] [sw_udc]: usb_vbase  = 0xf1c13000
+<7>[    0.050000] [sw_udc]: sram_vbase = 0xf1c00000
+<7>[    0.050000] [sw_udc]: open_usb_clock
+<7>[    0.066570] udc->driver is null, udc is need not stop
+<6>[    0.066943] NET: Registered protocol family 2
+<6>[    0.067062] IP route cache hash table entries: 32768 (order: 5, 131072 bytes)
+<6>[    0.067410] TCP established hash table entries: 131072 (order: 8, 1048576 bytes)
+<6>[    0.069474] TCP bind hash table entries: 65536 (order: 6, 262144 bytes)
+<6>[    0.070206] TCP: Hash tables configured (established 131072 bind 65536)
+<6>[    0.070217] TCP reno registered
+<6>[    0.070229] UDP hash table entries: 512 (order: 1, 8192 bytes)
+<6>[    0.070254] UDP-Lite hash table entries: 512 (order: 1, 8192 bytes)
+<6>[    0.070447] NET: Registered protocol family 1
+<6>[    0.070721] RPC: Registered named UNIX socket transport module.
+<6>[    0.070734] RPC: Registered udp transport module.
+<6>[    0.070741] RPC: Registered tcp transport module.
+<6>[    0.070749] RPC: Registered tcp NFSv4.1 backchannel transport module.
+<6>[    0.070917] Trying to unpack rootfs image as initramfs...
+<6>[    0.111352] Freeing initrd memory: 276K
+<7>[    0.111458] [pm]aw_pm_init!
+<7>[    0.129363] highmem bounce pool size: 64 pages
+<6>[    0.129615] ashmem: initialized
+<5>[    0.135363] VFS: Disk quotas dquot_6.5.2
+<7>[    0.135532] Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
+<6>[    0.138689] NTFS driver 2.1.30 [Flags: R/W].
+<6>[    0.139151] fuse init (API version 7.16)
+<6>[    0.139765] msgmni has been set to 859
+<4>[    0.140267] cryptomgr_test used greatest stack depth: 6672 bytes left
+<4>[    0.140677] cryptomgr_test used greatest stack depth: 6480 bytes left
+<4>[    0.142802] cryptomgr_test used greatest stack depth: 6388 bytes left
+<4>[    0.143901] cryptomgr_test used greatest stack depth: 6280 bytes left
+<6>[    0.144376] alg: No test for stdrng (krng)
+<6>[    0.144592] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 253)
+<6>[    0.144607] io scheduler noop registered
+<6>[    0.144617] io scheduler deadline registered
+<6>[    0.144694] io scheduler cfq registered (default)
+<6>[    0.145302] Serial: 8250/16550 driver, 8 ports, IRQ sharing disabled
+<6>[    0.167384] sunxi-uart.0: ttyS0 at MMIO 0x1c28000 (irq = 1) is a U6_16550A
+<6>[    0.777564] console [ttyS0] enabled
+<6>[    0.801563] sunxi-uart.2: ttyS1 at MMIO 0x1c28800 (irq = 3) is a U6_16550A
+<6>[    0.828819] sunxi-uart.3: ttyS2 at MMIO 0x1c28c00 (irq = 4) is a U6_16550A
+<7>[    0.836260] G2D: drv_g2d_init
+<6>[    0.839233] G2D: g2dmem: g2d_start=58000000, g2d_size=1000000
+<6>[    0.845005] G2D: head:d8000000,tail:d9000000
+<6>[    0.849303] G2D: Module initialized.major:251
+<6>[    0.854245] brd: module loaded
+<6>[    0.859374] loop: module loaded
+<7>[    0.862562] [NAND]nand driver, init.
+<7>[    0.866141] [NAND] nand driver version: 0x2, 0x10, data: 20120610
+<7>[    0.872246] [NAND] nand clk request start
+<7>[    0.876258] [NAND] nand clk request ok!
+<7>[    0.880140] [NAND] nand gpio_request
+<7>[    0.883743] [NAND] nand gpio_request fail
+<7>[    0.887753] NAND_RequestDMA  ok
+<7>[    0.891228] [NAND] nand driver version: 0x2 0x10 
+<7>[    0.895944] nand interrupte register ok
+<7>[    0.935134] The 0 disk name = bootloader, class name = DISK, disk size = -407877596
+<7>[    0.942829] The 1 disk name = env, class name = DISK, disk size = -407877532
+<7>[    0.949871] The 2 disk name = boot, class name = DISK, disk size = -407877468
+<7>[    0.957028] The 3 disk name = system, class name = DISK, disk size = -407877404
+<7>[    0.964348] The 4 disk name = data, class name = DISK, disk size = -407877340
+<7>[    0.971493] The 5 disk name = misc, class name = DISK, disk size = -407877276
+<7>[    0.978621] The 6 disk name = recovery, class name = DISK, disk size = -407877212
+<7>[    0.986113] The 7 disk name = cache, class name = DISK, disk size = -407877148
+<7>[    0.993345] The 8 disk name = private, class name = DISK, disk size = -407877084
+<7>[    1.000755] The 9 disk name = sysrecovery, class name = DISK, disk size = -407877020
+<7>[    1.008491] The 10 disk name = UDISK, class name = DISK, disk size = -407876956
+<7>[    1.015811] The 10 disk size = 4157440
+<7>[    1.019555] part total count = 11
+<6>[    1.024180]  nanda:
+<6>[    1.028542]  nandb: unknown partition table
+<6>[    1.034166]  nandc: unknown partition table
+<6>[    1.039697]  nandd: unknown partition table
+<6>[    1.048982]  nande: unknown partition table
+<6>[    1.055367]  nandf: unknown partition table
+<6>[    1.060905]  nandg: unknown partition table
+<6>[    1.251732]  nandh: unknown partition table
+<6>[    1.257128]  nandi:
+<6>[    1.260556]  nandj: unknown partition table
+<6>[    1.265989]  nandk:
+<6>[    1.268253] benn: nand probe enter
+<7>[    1.271748] [NAND]nand driver, ok.
+<6>[    1.275212] android_lang_init
+<7>[    1.372593] SATA AHCI Phy Power Failed!!
+<7>[    1.470293] SATA AHCI Phy Calibration Failed!!
+<7>[    1.474741] err: gpio count < =0 ,gpio_count is: 0 
+<6>[    1.479619] sw_ahci sw_ahci.0: controller can't do PMP, turning off CAP_PMP
+<4>[    1.486596] sw_ahci sw_ahci.0: forcing PORTS_IMPL to 0x1
+<6>[    1.491977] sw_ahci sw_ahci.0: AHCI 0001.0100 32 slots 1 ports 3 Gbps 0x1 impl platform mode
+<6>[    1.500430] sw_ahci sw_ahci.0: flags: ncq sntf pm led clo only pio slum part ccc 
+<6>[    1.508469] scsi0 : sw_ahci_platform
+<6>[    1.512405] ata1: SATA max UDMA/133 mmio [mem 0x01c18000-0x01c18fff] port 0x100 irq 56
+<6>[    1.520475] PPP generic driver version 2.4.2
+<6>[    1.524949] PPP Deflate Compression module registered
+<6>[    1.530000] PPP BSD Compression module registered
+<6>[    1.535858] PPP MPPE Compression module registered
+<6>[    1.540774] NET: Registered protocol family 24
+<6>[    1.545250] PPTP driver version 0.8.5
+<6>[    1.549242] wemac Ethernet Driver, V1.00 in file:drivers/net/sun4i/sun4i_wemac.c
+<6>[    1.556936] [EMAC] ahb clk enable 
+<6>[    1.560385] [EMAC] ahb gate clk: 0x2026041 
+<7>[    1.574644] wemac wemac.0: PHY SETUP, reg 0 value: 0
+<7>[    1.580619] wemac wemac.0: resetting device
+<7>[    1.585551] release temp resource
+<6>[    1.588921] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+<6>[    1.595523] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+<7>[    1.601929] [sw-ehci1]: probe, pdev->name: sw-ehci, pdev->id: 1, sw_ehci: 0xc08c04bc
+<7>[    1.609669] [sw-ehci1]: open clock
+<7>[    1.633040] [sw-ehci1]: Set USB Power ON
+<6>[    1.636965] sw-ehci sw-ehci.1: SW USB2.0 'Enhanced' Host Controller (EHCI) Driver
+<6>[    1.644476] sw-ehci sw-ehci.1: new USB bus registered, assigned bus number 1
+<6>[    1.651620] sw-ehci sw-ehci.1: irq 39, io mem 0xf1c14000
+<6>[    1.670048] sw-ehci sw-ehci.1: USB 0.0 started, EHCI 1.00
+<7>[    1.675446] ehci_irq: port change detect
+<6>[    1.679919] hub 1-0:1.0: USB hub found
+<6>[    1.683719] hub 1-0:1.0: 1 port detected
+<7>[    1.687965] [sw-ohci1]: probe, pdev->name: sw-ohci, pdev->id: 1, sw_ohci: 0xc08c05cc
+<7>[    1.695734] [sw-ohci1]: open clock
+<6>[    1.719088] sw-ohci sw-ohci.1: SW USB2.0 'Open' Host Controller (OHCI) Driver
+<6>[    1.726256] sw-ohci sw-ohci.1: new USB bus registered, assigned bus number 2
+<6>[    1.733346] sw-ohci sw-ohci.1: irq 64, io mem 0xf1c14400
+<6>[    1.794431] hub 2-0:1.0: USB hub found
+<6>[    1.798193] hub 2-0:1.0: 1 port detected
+<7>[    1.802489] [sw-ehci2]: probe, pdev->name: sw-ehci, pdev->id: 2, sw_ehci: 0xc08c06e0
+<7>[    1.810272] [sw-ehci2]: open clock
+<7>[    1.833634] [sw-ehci2]: Set USB Power ON
+<6>[    1.837558] sw-ehci sw-ehci.2: SW USB2.0 'Enhanced' Host Controller (EHCI) Driver
+<6>[    1.845077] sw-ehci sw-ehci.2: new USB bus registered, assigned bus number 3
+<6>[    1.852217] sw-ehci sw-ehci.2: irq 40, io mem 0xf1c1c000
+<6>[    1.870036] sw-ehci sw-ehci.2: USB 0.0 started, EHCI 1.00
+<6>[    1.875830] hub 3-0:1.0: USB hub found
+<6>[    1.879589] hub 3-0:1.0: 1 port detected
+<6>[    1.883602] ata1: SATA link down (SStatus 0 SControl 300)
+<7>[    1.889080] ehci_irq: port change detect
+<7>[    1.893305] [sw-ehci2]: sw_usb_disable_ehci
+<7>[    1.897491] [sw-ehci2]: remove, pdev->name: sw-ehci, pdev->id: 2, sw_ehci: 0xc08c06e0
+<6>[    1.905408] sw-ehci sw-ehci.2: remove, state 1
+<6>[    1.909859] usb usb3: USB disconnect, device number 1
+<6>[    1.915574] sw-ehci sw-ehci.2: USB bus 3 deregistered
+<7>[    1.920705] [sw-ehci2]: Set USB Power OFF
+<7>[    1.924715] [sw-ehci2]: close clock
+<7>[    1.928329] [sw-ohci2]: probe, pdev->name: sw-ohci, pdev->id: 2, sw_ohci: 0xc08c07f0
+<7>[    1.936108] [sw-ohci2]: open clock
+<7>[    1.959455] [sw-ohci2]: Set USB Power ON
+<7>[    1.963432] The port change to OHCI now!
+<6>[    1.967369] sw-ohci sw-ohci.2: SW USB2.0 'Open' Host Controller (OHCI) Driver
+<6>[    1.974535] sw-ohci sw-ohci.2: new USB bus registered, assigned bus number 3
+<6>[    1.981624] sw-ohci sw-ohci.2: irq 65, io mem 0xf1c1c400
+<6>[    2.044422] hub 3-0:1.0: USB hub found
+<6>[    2.048183] hub 3-0:1.0: 1 port detected
+<7>[    2.052351] [sw-ohci2]: sw_usb_disable_ohci
+<7>[    2.056535] [sw-ohci2]: remove, pdev->name: sw-ohci, pdev->id: 2, sw_ohci: 0xc08c07f0
+<6>[    2.064382] sw-ohci sw-ohci.2: remove, state 1
+<6>[    2.068829] usb usb3: USB disconnect, device number 1
+<6>[    2.074237] sw-ohci sw-ohci.2: USB bus 3 deregistered
+<7>[    2.079291] [sw-ohci2]: Set USB Power OFF
+<7>[    2.083373] [sw-ohci2]: close clock
+<6>[    2.086899] Initializing USB Mass Storage driver...
+<6>[    2.091927] usbcore: registered new interface driver usb-storage
+<6>[    2.097928] USB Mass Storage support registered.
+<6>[    2.102613] usbcore: registered new interface driver ums-alauda
+<6>[    2.108566] usbcore: registered new interface driver ums-cypress
+<6>[    2.114626] usbcore: registered new interface driver ums-datafab
+<6>[    2.120682] usbcore: registered new interface driver ums_eneub6250
+<6>[    2.126890] usbcore: registered new interface driver ums-freecom
+<6>[    2.132947] usbcore: registered new interface driver ums-isd200
+<6>[    2.138897] usbcore: registered new interface driver ums-jumpshot
+<6>[    2.145030] usb 2-1: new low speed USB device number 2 using sw-ohci
+<6>[    2.151447] usbcore: registered new interface driver ums-karma
+<6>[    2.157310] usbcore: registered new interface driver ums-onetouch
+<6>[    2.163534] usbcore: registered new interface driver ums-realtek
+<6>[    2.169629] usbcore: registered new interface driver ums-sddr09
+<6>[    2.175615] usbcore: registered new interface driver ums-sddr55
+<6>[    2.181604] usbcore: registered new interface driver ums-usbat
+<6>[    2.187548] usbcore: registered new interface driver usbserial
+<6>[    2.193401] usbserial: USB Serial Driver core
+<6>[    2.197794] USB Serial support registered for GSM modem (1-port)
+<6>[    2.203942] usbcore: registered new interface driver option
+<6>[    2.209509] option: v0.7.2:USB Driver for GSM modems
+<7>[    2.214525] ------print_msc_config-----
+<7>[    2.218358] vendor_id             = 0x18d1
+<7>[    2.222468] mass_storage_id       = 0x1
+<7>[    2.226300] adb_id                = 0x2
+<7>[    2.230148] usb_manufacturer_name = USB Developer
+<7>[    2.234846] usb_product_name      = Android
+<7>[    2.239024] usb_serial_number     = 20080411
+<7>[    2.243334] msc_vendor_name       = USB 2.0
+<7>[    2.247514] msc_product_name      = USB Flash Driver
+<7>[    2.252492] msc_release           = 100
+<7>[    2.256323] luns                  = 3
+<7>[    2.259980] ---------------------------
+<7>[    2.264004] [sw_udc]: [sw_usb_udc]: binding gadget driver 'android_usb'
+<7>[    2.270650] [sw_udc]: alloc request: ep(0xc07e83c8, ep0, 64), req(0xe7b61540)
+<7>[    2.277798] [sw_udc]: sw_udc_pullup, is_on = 0
+<7>[    2.282268] [sw_udc]: usbd_stop_work
+<6>[    2.287158] android_usb gadget: Mass Storage Function, version: 2009/09/11
+<6>[    2.294090] android_usb gadget: Number of LUNs=3
+<6>[    2.298707]  lun0: LUN: removable file: (no medium)
+<6>[    2.303645]  lun1: LUN: removable file: (no medium)
+<6>[    2.308561]  lun2: LUN: removable file: (no medium)
+<7>[    2.313490] lun name: lun
+<7>[    2.316117] lun name: lun1
+<7>[    2.318826] lun name: lun2
+<6>[    2.321770] android_usb gadget: android_usb ready
+<6>[    2.326607] mousedev: PS/2 mouse device common for all mice
+<6>[    2.332534] input: sun4i-keyboard as /devices/virtual/input/input0
+<7>[    2.338915] ==register_early_suspend =
+<7>[    2.343306] sunxi RTC version 0.1 
+<6>[    2.346938] sunxi-rtc sunxi-rtc: sunxi_rtc_probe tmp_data = 380248073
+<7>[    2.353416] [RTC] ERR: Set LOSC to external failed!!!
+<7>[    2.358526] [RTC] WARNING: Rtc time will be wrong!!
+<6>[    2.363708] using rtc device, rtc, for alarms
+<6>[    2.367978] sunxi-rtc sunxi-rtc: rtc core: registered rtc as rtc0
+<6>[    2.374329] i2c /dev entries driver
+<7>[    2.377988] !!! base_Addr = 0xe8916c00 
+<7>[    2.381869] config i2c gpio with gpio_config api 
+<7>[    2.386937] twi0, apb clock = 24000000 
+<6>[    2.392794] axp_mfd 0-0034: AXP (CHIP ID: 0x21) detected
+<6>[    2.399258] I2C: i2c-0: AW16XX I2C adapter
+<7>[    2.403384] **********start************
+<7>[    2.407218] 0x40 
+<7>[    2.409141] 0xf8 
+<7>[    2.411081] 0x28 
+<7>[    2.413004] 0x0 
+<7>[    2.414840] 0x0 
+<7>[    2.416676] **********end************
+<7>[    2.420399] !!! base_Addr = 0xe8918000 
+<7>[    2.424277] twi1, apb clock = 24000000 
+<6>[    2.428321] I2C: i2c-1: AW16XX I2C adapter
+<7>[    2.432443] **********start************
+<7>[    2.436275] 0x40 
+<7>[    2.438198] 0xf8 
+<7>[    2.440138] 0x58 
+<7>[    2.442060] 0x0 
+<7>[    2.443896] 0x0 
+<7>[    2.445732] **********end************
+<7>[    2.449427] !!! base_Addr = 0xe891a400 
+<7>[    2.453316] twi2, apb clock = 24000000 
+<6>[    2.457325] I2C: i2c-2: AW16XX I2C adapter
+<7>[    2.461442] **********start************
+<7>[    2.465274] 0x40 
+<7>[    2.467196] 0xf8 
+<7>[    2.469118] 0x58 
+<7>[    2.471058] 0x0 
+<7>[    2.472895] 0x0 
+<7>[    2.474731] **********end************
+<6>[    2.478527] lirc_dev: IR Remote Control driver registered, major 249 
+<6>[    2.484989] IR NEC protocol handler initialized
+<6>[    2.489515] IR RC5(x) protocol handler initialized
+<6>[    2.494318] IR RC6 protocol handler initialized
+<6>[    2.498843] IR JVC protocol handler initialized
+<6>[    2.503385] IR Sony protocol handler initialized
+<6>[    2.507997] IR RC5 (streamzap) protocol handler initialized
+<6>[    2.513580] IR LIRC bridge handler initialized
+<6>[    2.518019] Linux video capture interface: v2.00
+<6>[    2.522768] usbcore: registered new interface driver uvcvideo
+<6>[    2.528509] USB Video Class driver (v1.1.0)
+<7>[    2.532750] [cedar dev]: install start!!!
+<7>[    2.537142] [cedar dev]: install end!!!
+<7>[    2.541015] [ace_drv] start!!!
+<7>[    2.544358] [ace_drv] init end!!!
+<7>[    2.547671] [pa_drv] start!!!
+<7>[    2.550922] [pa_drv] init end!!!
+<6>[    2.554257] print_constraints: axp20_ldo1: 1300 mV 
+<6>[    2.560099] print_constraints: axp20_ldo2: 1800 <--> 3300 mV at 3000 mV 
+<6>[    2.567732] print_constraints: axp20_ldo3: 700 <--> 3500 mV at 2800 mV 
+<6>[    2.575276] print_constraints: axp20_ldo4: 1250 <--> 3300 mV at 2800 mV 
+<6>[    2.582903] print_constraints: axp20_buck2: 700 <--> 2275 mV at 1500 mV 
+<6>[    2.590548] print_constraints: axp20_buck3: 700 <--> 3500 mV at 1250 mV 
+<6>[    2.597642] print_constraints: axp20_ldoio0: 1800 <--> 3300 mV at 2800 mV 
+<6>[    2.604815] input: axp20-supplyer as /devices/platform/sun4i-i2c.0/i2c-0/0-0034/axp20-supplyer.28/input/input1
+<7>[    2.620754] pmu_pekoff_time = 6000
+<7>[    2.624156] pmu_pekoff_en = 1
+<7>[    2.627122] pmu_peklong_time = 1000
+<7>[    2.630629] pmu_pekon_time = 1000
+<7>[    2.633940] pmu_pwrok_time = 64
+<7>[    2.637078] pmu_pwrnoe_time = 2000
+<7>[    2.640492] pmu_intotp_en = 1
+<7>[    2.643925] [AXP]POWER20_OFF_CTL:1908-->0x42
+<7>[    2.648658] POWER20_PEK_SET:1925-->0x8d
+<7>[    2.652976] POWER20_PEK_SET:1936-->0x8d
+<7>[    2.657273] POWER20_PEK_SET:1945-->0x8d
+<7>[    2.661590] POWER20_PEK_SET:1956-->0x8d
+<7>[    2.665888] POWER20_PEK_SET:1968-->0x8d
+<7>[    2.670205] POWER20_HOTOVER_CTL:1977-->0xad
+<7>[    2.677913] [AXP]last_rest_vol = 0, now_rest_vol	= 100
+<7>[    2.684575] [AXP]Cur_CoulombCounter	= 0
+<7>[    2.688409] [AXP]charger->rest_vol = 100
+<6>[    2.695313] device-mapper: ioctl: 4.20.0-ioctl (2011-02-02) initialised: dm-devel@redhat.com
+<6>[    2.704208] device-mapper: multipath: version 1.3.0 loaded
+<6>[    2.709694] device-mapper: multipath round-robin: version 1.0.0 loaded
+<6>[    2.716275] device-mapper: multipath queue-length: version 0.1.0 loaded
+<6>[    2.722904] device-mapper: multipath service-time: version 0.2.0 loaded
+<6>[    2.729788] Bluetooth: HCI UART driver ver 2.2
+<6>[    2.734259] Bluetooth: HCI H4 protocol initialized
+<6>[    2.739047] Bluetooth: HCI BCSP protocol initialized
+<6>[    2.744024] Bluetooth: HCILL protocol initialized
+<7>[    2.748929] [mmc_pm]: no sdio card used in configuration
+<7>[    2.754279] [mmc]: sunximmc_init
+<7>[    2.757790] [mmc]: sunxi mmc controller using config : 0xb
+<7>[    2.763364] [mmc]: sunxi-mmc.0: pdev->name: sunxi-mmc, pdev->id: 0
+<7>[    2.769843] [mmc]: mmc 0 power off !!
+<7>[    2.773634] [mmc]: mmc0 Probe: base:0xe8922000 irq:32 dma:0 pdes:0xe7bf4000, ret 0.
+<7>[    2.781325] [mmc]: sunxi-mmc.1: pdev->name: sunxi-mmc, pdev->id: 1
+<7>[    2.787724] [mmc]: mmc 1 power off !!
+<7>[    2.791482] [mmc]: mmc1 Probe: base:0xe8924000 irq:33 dma:0 pdes:0xe7bf8000, ret 0.
+<7>[    2.799148] [mmc]: sunxi-mmc.3: pdev->name: sunxi-mmc, pdev->id: 3
+<7>[    2.805539] [mmc]: mmc 3 power off !!
+<7>[    2.809265] [mmc]: mmc3 Probe: base:0xe8926000 irq:35 dma:0 pdes:0xe7bfc000, ret 0.
+<6>[    2.816968] sun4i_leds_gpio_init, 328
+<6>[    2.820934] leds_sun4i_gpio_probe
+<7>[    2.824322] Registered led device: leds_sun4i_gpio0
+<6>[    2.829388] leds_sun4i_gpio_probe
+<7>[    2.832815] Registered led device: leds_sun4i_gpio1
+<6>[    2.845185] input: ORtek Wireless Touchpad Keyboard as /devices/platform/sw-ohci.1/usb2/2-1/2-1:1.0/input/input2
+<6>[    2.855666] generic-usb 0003:05A4:1000.0001: input: USB HID v1.10 Keyboard [ORtek Wireless Touchpad Keyboard] on usb-sw-ohci-1/input0
+<6>[    2.881292] input: ORtek Wireless Touchpad Keyboard as /devices/platform/sw-ohci.1/usb2/2-1/2-1:1.1/input/input3
+<6>[    2.891762] generic-usb 0003:05A4:1000.0002: input: USB HID v1.10 Mouse [ORtek Wireless Touchpad Keyboard] on usb-sw-ohci-1/input1
+<6>[    2.903723] usbcore: registered new interface driver usbhid
+<6>[    2.909291] usbhid: USB HID core driver
+<6>[    2.913345] usbcore: registered new interface driver usb_wireless_remote
+<6>[    2.920072] usb_wireless_remote: 20080411:USB 2.4G Wireless Receiver
+<6>[    2.926798] logger: created 256K log 'log_main'
+<6>[    2.931484] logger: created 256K log 'log_events'
+<6>[    2.936267] logger: created 256K log 'log_radio'
+<6>[    2.940999] logger: created 256K log 'log_system'
+<6>[    2.946054] usbcore: registered new interface driver snd-usb-audio
+<7>[    2.952684] enter sun4i Audio codec!!!
+<6>[    2.957121] sun4i audio support initialized
+<7>[    2.961575] sun4i Audio codec successfully loaded..
+<7>[    2.967405] soc_new_pcm,line:2112
+<6>[    2.971009] asoc: sndhdmi <-> sun4i-hdmiaudio.0 mapping ok
+<6>[    2.976844] ALSA device list:
+<6>[    2.979813]   #0: sun4i-CODEC  Audio Codec
+<6>[    2.983936]   #1: sun4i-sndhdmi
+<6>[    2.987361] Netfilter messages via NETLINK v0.30.
+<6>[    2.992154] nf_conntrack version 0.5.0 (13021 buckets, 52084 max)
+<6>[    2.998779] ctnetlink v0.93: registering with nfnetlink.
+<6>[    3.004129] NF_TPROXY: Transparent proxy support initialized, version 4.1.0
+<6>[    3.011103] NF_TPROXY: Copyright (c) 2006-2007 BalaBit IT Ltd.
+<6>[    3.017186] IPv4 over IPv4 tunneling driver
+<6>[    3.021738] GRE over IPv4 demultiplexor driver
+<6>[    3.026007] GRE over IPv4 tunneling driver
+<6>[    3.030838] ip_tables: (C) 2000-2006 Netfilter Core Team
+<6>[    3.036306] TCP cubic registered
+<6>[    3.039533] Initializing XFRM netlink socket
+<6>[    3.044599] NET: Registered protocol family 10
+<6>[    3.049883] ip6_tables: (C) 2000-2006 Netfilter Core Team
+<6>[    3.055461] IPv6 over IPv4 tunneling driver
+<6>[    3.060523] NET: Registered protocol family 17
+<6>[    3.064993] NET: Registered protocol family 15
+<6>[    3.069591] Bluetooth: RFCOMM TTY layer initialized
+<6>[    3.074570] Bluetooth: RFCOMM socket layer initialized
+<6>[    3.079706] Bluetooth: RFCOMM ver 1.11
+<6>[    3.083474] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+<6>[    3.088781] Bluetooth: BNEP filters: protocol multicast
+<6>[    3.094019] Bluetooth: HIDP (Human Interface Emulation) ver 1.2
+<6>[    3.100058] L2TP core driver, V2.0
+<6>[    3.103474] PPPoL2TP kernel driver, V2.0
+<6>[    3.107393] L2TP IP encapsulation support (L2TPv3)
+<6>[    3.112296] L2TP netlink interface
+<6>[    3.115722] L2TP ethernet pseudowire support (L2TPv3)
+<7>[    3.121171] [mmc_pm]: No sdio card, please check your config !!
+<6>[    3.127130] VFP support v0.3: implementor 41 architecture 3 part 30 variant c rev 3
+<7>[    3.135175] dram_sysdev_init finished!
+<6>[    3.139258] sun4i_cpufreq_get, 522
+<6>[    3.142772] sun4i_cpufreq_get, 522
+<4>[    3.146704] [LCD] lcd_module_init
+<4>[    3.218903] regulator_init_complete: axp20_buck3: incomplete constraints, leaving on
+<4>[    3.226948] regulator_init_complete: axp20_buck2: incomplete constraints, leaving on
+<4>[    3.235033] regulator_init_complete: axp20_ldo4: incomplete constraints, leaving on
+<4>[    3.242977] regulator_init_complete: axp20_ldo3: incomplete constraints, leaving on
+<4>[    3.250911] regulator_init_complete: axp20_ldo2: incomplete constraints, leaving on
+<4>[    3.258817] regulator_init_complete: axp20_ldo1: incomplete constraints, leaving on
+<3>[    3.266549] sunxi-rtc sunxi-rtc: hctosys: unable to read the hardware clock
+<6>[    3.273814] Freeing init memory: 164K
+<6>[    3.360845] EXT4-fs (nandd): recovery complete
+<6>[    3.365485] EXT4-fs (nandd): mounted filesystem with ordered data mode. Opts: (null)
+<3>[    3.373602] init: to sleep 1 seconds.
+<3>[    4.377364] init: has waken up.
+<3>[    4.380571] init: [william] hdmistatus = 1!
+<3>[    4.391311] init: width = 1280
+<3>[    4.394444] init: height = 720
+<3>[    4.397560] init: s.st_size = 3686400
+<6>[    4.661632] EXT4-fs (nandd): barriers disabled
+<6>[    4.667392] EXT4-fs (nandd): mounted filesystem with ordered data mode. Opts: barrier=0
+<6>[    4.684631] EXT4-fs (nande): barriers disabled
+<7>[    7.768667] EXT4-fs (nande): ext4_orphan_cleanup: deleting unreferenced inode 24608
+<7>[    7.776452] EXT4-fs (nande): ext4_orphan_cleanup: deleting unreferenced inode 24606
+<7>[    7.784160] EXT4-fs (nande): ext4_orphan_cleanup: deleting unreferenced inode 24599
+<7>[    7.791901] EXT4-fs (nande): ext4_orphan_cleanup: deleting unreferenced inode 24595
+<6>[    7.799579] EXT4-fs (nande): 4 orphan inodes deleted
+<6>[    7.804581] EXT4-fs (nande): recovery complete
+<6>[    8.508929] EXT4-fs (nande): mounted filesystem with ordered data mode. Opts: barrier=0
+<3>[    8.517271] init: do_umount: /data 
+<4>[    8.622625] e2fsck used greatest stack depth: 5696 bytes left
+<6>[    8.711496] EXT4-fs (nande): barriers disabled
+<6>[    8.718539] EXT4-fs (nande): mounted filesystem with ordered data mode. Opts: barrier=0,journal_checksum,noauto_da_alloc
+<6>[    8.739628] EXT4-fs (nandh): barriers disabled
+<7>[    9.450136] EXT4-fs (nandh): ext4_orphan_cleanup: deleting unreferenced inode 41
+<7>[    9.457624] EXT4-fs (nandh): ext4_orphan_cleanup: deleting unreferenced inode 38
+<7>[    9.465283] EXT4-fs (nandh): ext4_orphan_cleanup: deleting unreferenced inode 26
+<7>[    9.472762] EXT4-fs (nandh): ext4_orphan_cleanup: deleting unreferenced inode 12
+<6>[    9.480245] EXT4-fs (nandh): 4 orphan inodes deleted
+<6>[    9.485209] EXT4-fs (nandh): recovery complete
+<6>[    9.501591] EXT4-fs (nandh): mounted filesystem with ordered data mode. Opts: barrier=0
+<3>[    9.509794] init: do_umount: /cache 
+<6>[    9.544004] EXT4-fs (nandh): barriers disabled
+<6>[    9.549719] EXT4-fs (nandh): mounted filesystem with ordered data mode. Opts: barrier=0,journal_checksum,noauto_da_alloc
+<3>[    9.562225] init: dont need format /dev/block/nandk
+<3>[    9.568050] init: dont need format /dev/block/nandi
+<4>[    9.850890] init (1): /proc/1/oom_adj is deprecated, please use /proc/1/oom_score_adj instead.
+<3>[    9.864646] init: cannot find '/system/etc/install-recovery.sh', disabling 'flash_recovery'
+<6>[    9.964177] ===========================ft5x_ts_init=====================
+<6>[    9.978051] ctp_fetch_sysconfig_para. 
+<6>[    9.993321] ctp_fetch_sysconfig_para: after: ctp_twi_addr is 0x38, dirty_addr_buf: 0x38. dirty_addr_buf[1]: 0xfffe 
+<6>[   10.025677] ctp_fetch_sysconfig_para: ctp_twi_id is 2. 
+<6>[   10.044812] ctp_fetch_sysconfig_para: screen_max_x = 800. 
+<6>[   10.065180] ctp_fetch_sysconfig_para: screen_max_y = 480. 
+<6>[   10.083296] ctp_fetch_sysconfig_para: revert_x_flag = 0. 
+<6>[   10.098784] ctp_fetch_sysconfig_para: revert_y_flag = 0. 
+<6>[   10.110244] ctp_fetch_sysconfig_para: exchange_x_y_flag = 0. 
+<6>[   10.117761] ft5x_ts_init: after fetch_sysconfig_para:  normal_i2c: 0x38. normal_i2c[1]: 0xfffe 
+<6>[   10.126618] ctp_reset. 
+<6>[   10.175347] ctp_wakeup. 
+<6>[   10.275572] ctp_detect: Detected chip ft5x_ts at adapter 2, address 0x38
+<6>[   10.283319] ====ft5x_ts_probe begin=====.  
+<6>[   10.287969] input: ft5x_ts as /devices/virtual/input/input4
+<6>[   10.313568] ==register_early_suspend =
+<6>[   10.317443] CONFIG_FT5X0X_MULTITOUCH is defined. 
+<6>[   10.322312] ctp_set_irq_mode: config gpio to int mode. 
+<6>[   10.327586]  INTERRUPT CONFIG
+<6>[   10.331319] ==ft5x_ts_probe over =
+<6>[   10.353751] input: sun4i-ir as /devices/virtual/input/input5
+<7>[   10.360252] IR Initial OK
+<7>[   10.362981] ==register_early_suspend =
+<4>[   10.368701] iptables used greatest stack depth: 5240 bytes left
+<7>[   10.417007] UMP<2>: Inserting UMP device driver. Compiled: Oct 18 2012, time: 08:48:19
+<7>[   10.426683] UMP<2>: Using OS memory backend, allocation limit: 134217728
+<7>[   10.433637] UMP: UMP device driver  loaded
+<7>[   10.616450] Mali: Mali device driver  loaded
+<6>[   10.687300] usbcore: registered new interface driver asix
+<6>[   10.727661] usbcore: registered new interface driver qf9700
+<6>[   10.762422] usbcore: registered new interface driver MOSCHIP usb-ethernet driver
+<6>[   10.802213] rtl8150: v0.6.2 (2004/08/27):rtl8150 based usb-ethernet driver
+<6>[   10.809494] usbcore: registered new interface driver rtl8150
+<7>[   10.838735] Registered gpio_sw device: PH10
+<7>[   10.847807] Registered gpio_sw device: PH20
+<7>[   10.852382] Registered gpio_sw device: PB3
+<7>[   10.977055] soc_new_pcm,line:2112
+<6>[   10.980821] asoc: sndspdif <-> sun4i-spdif.0 mapping ok
+<6>[   11.061626] usbcore: registered new interface driver cdc_ether
+<6>[   11.113902] usbcore: registered new interface driver cdc_eem
+<6>[   11.161437] usbcore: registered new interface driver cdc_subset
+<7>[   11.168179] [mmc_pm]: No sdio card, please check your config !!
+<6>[   11.280387] android_lang_open
+<6>[   11.283376] client_ioctl, 0x0
+<7>[   11.286360] firmware_versions = 404.006.20.121018, ret=0
+<3>[   11.340153] init: firmware_versions is 404.006.20.121018, ret=0
+<6>[   11.346109] android_lang_release
+<3>[   11.349586] android_usb: already disabled
+<7>[   11.420445] ep_matches, wrn: endpoint already claimed, ep(0xc07e8408, 0xe7b72800, ep1-bulk)
+<6>[   11.428821] adb_bind_config
+<7>[   11.486444] ep_matches, wrn: endpoint already claimed, ep(0xc07e8408, 0xe7b72800, ep1-bulk)
+<7>[   11.495665] ep_matches, wrn: endpoint already claimed, ep(0xc07e8448, 0xe7b72800, ep2-bulk)
+<7>[   11.505064] ep_matches, wrn: endpoint already claimed, ep(0xc07e8408, 0xe7b72800, ep1-bulk)
+<7>[   11.513533] ep_matches, wrn: endpoint already claimed, ep(0xc07e8448, 0xe7b72800, ep2-bulk)
+<7>[   11.521939] ep_matches, wrn: endpoint already claimed, ep(0xc07e8488, 0xe7b5d280, ep3-bulk)
+<7>[   11.532663] [sw_udc]: alloc request: ep(0xc07e84c8, ep4-bulk, 512), req(0xe7300ac0)
+<7>[   11.540549] [sw_udc]: alloc request: ep(0xc07e8488, ep3-bulk, 512), req(0xe7300800)
+<7>[   11.548502] [sw_udc]: alloc request: ep(0xc07e8488, ep3-bulk, 512), req(0xe733f000)
+<7>[   11.556321] [sw_udc]: alloc request: ep(0xc07e8488, ep3-bulk, 512), req(0xe733f040)
+<7>[   11.573341] [sw_udc]: alloc request: ep(0xc07e8488, ep3-bulk, 512), req(0xe733f080)
+<7>[   11.581397] [sw_udc]: sw_udc_pullup, is_on = 1
+<7>[   11.586229] [sw_udc]: CONFIG_USB_GADGET_DUALSPEED
+<7>[   11.591120] [sw_udc]: usbd_start_work
+<6>[   11.600752] adb_open
+<7>[   11.650455] [sw_udc]: IRQ: suspend
+<7>[   11.653887] [sw_udc]: ERR: usb speed is unkown
+<7>[   11.776342] [sw_udc]: IRQ: reset
+<7>[   11.779599] [sw_udc]: irq: reset happen, throw away all urb
+<7>[   11.887093] [sw_udc]: 
+<7>[   11.889293] +++++++++++++++++++++++++++++++++++++
+<7>[   11.894175] [sw_udc]:  usb enter high speed.
+<7>[   11.897076] [sw_udc]: 
+<7>[   11.897076] +++++++++++++++++++++++++++++++++++++
+<6>[   11.905737] android_work: sent uevent USB_STATE=CONNECTED
+<7>[   11.911164] [sw_udc]: IRQ: reset
+<7>[   11.914402] [sw_udc]: irq: reset happen, throw away all urb
+<7>[   11.967127] UMP<2>: New session opened
+<7>[   12.014970] [sw_udc]: Set address 64
+<6>[   12.038667] android_usb gadget: high speed config #1: android
+<7>[   12.044437] [sw_udc]: ep enable: ep3(0xc07e8488, ep3-bulk, 128, 512)
+<7>[   12.048417] [sw_udc]: ep enable: ep4(0xc07e84c8, ep4-bulk, 0, 512)
+<7>[   12.057100] [sw_udc]: ep enable: ep1(0xc07e8408, ep1-bulk, 128, 512)
+<6>[   12.063607] android_work: sent uevent USB_STATE=CONFIGURED
+<7>[   12.070184] [sw_udc]: ep enable: ep2(0xc07e8448, ep2-bulk, 0, 512)
+<7>[   12.076477] [sw_udc]: alloc request: ep(0xc07e8408, ep1-bulk, 512), req(0xe733fc00)
+<7>[   12.086116] [sw_udc]: alloc request: ep(0xc07e8448, ep2-bulk, 512), req(0xe733fc40)
+<7>[   12.093941] [sw_udc]: alloc request: ep(0xc07e8408, ep1-bulk, 512), req(0xe733fc80)
+<7>[   12.101757] [sw_udc]: alloc request: ep(0xc07e8448, ep2-bulk, 512), req(0xe733fcc0)
+<3>[   12.287468] init: untracked pid 100 exited
+<7>[   12.590186] UMP<2>: New session opened
+<7>[   17.055393] WRN:L1364(drivers/usb/sun4i_usb/udc/sw_udc.c):handle_ep0: ep0 setup end
+<6>[   18.485303] warning: `zygote' uses 32-bit capabilities (legacy support in use)
+<3>[   18.508442] sunxi-rtc sunxi-rtc: rtc only supports 63£¨2010¡«2073£© years
+<6>[   18.508461] alarm_set_rtc: Failed to set RTC, time will be lost on reboot
+<6>[   27.420522] request_suspend_state: wakeup (3->0) at 27420486630 (1970-01-02 00:00:08.912068485 UTC)
+<7>[   27.771167] wemac wemac.0: enabling eth0
+<4>[   27.771184] wemac wemac.0: WARNING: no IRQ resource flags set.
+<7>[   27.771221] wemac wemac.0: resetting device
+<6>[   27.793512] wemac wemac.0: eth0: link down
+<6>[   27.799826] ADDRCONF(NETDEV_UP): eth0: link is not ready
+<6>[   27.983751] acc_open
+<6>[   27.986502] acc_release
+<7>[   28.769518] sw_usb_enable_hcd: usbc_num = 2
+<7>[   28.769536] [sw-ehci2]: sw_usb_enable_ehci
+<7>[   28.769549] [sw-ehci2]: probe, pdev->name: sw-ehci, pdev->id: 2, sw_ehci: 0xc08c06e0
+<7>[   28.769564] [sw-ehci2]: open clock
+<7>[   28.832181] [sw-ehci2]: Set USB Power ON
+<6>[   28.836178] sw-ehci sw-ehci.2: SW USB2.0 'Enhanced' Host Controller (EHCI) Driver
+<6>[   28.847666] sw-ehci sw-ehci.2: new USB bus registered, assigned bus number 3
+<6>[   28.857590] sw-ehci sw-ehci.2: irq 40, io mem 0xf1c1c000
+<6>[   28.880625] sw-ehci sw-ehci.2: USB 0.0 started, EHCI 1.00
+<7>[   28.886037] ehci_irq: port change detect
+<6>[   28.907768] hub 3-0:1.0: USB hub found
+<6>[   28.914003] hub 3-0:1.0: 1 port detected
+<7>[   28.929032] [sw-ohci2]: sw_usb_enable_ohci
+<7>[   28.938436] [sw-ohci2]: probe, pdev->name: sw-ohci, pdev->id: 2, sw_ohci: 0xc08c07f0
+<7>[   28.979229] [sw-ohci2]: open clock
+<6>[   29.048153] sw-ohci sw-ohci.2: SW USB2.0 'Open' Host Controller (OHCI) Driver
+<6>[   29.070705] sw-ohci sw-ohci.2: new USB bus registered, assigned bus number 4
+<6>[   29.082972] sw-ohci sw-ohci.2: irq 65, io mem 0xf1c1c400
+<6>[   29.157692] hub 4-0:1.0: USB hub found
+<6>[   29.172748] hub 4-0:1.0: 1 port detected
+<7>[   29.193706] rtw driver version=v3.4.2_3727.20120404 
+<7>[   29.193718] Build at: Oct 18 2012 08:47:43
+<7>[   29.193725] ##########rtw_suspend_lock_init ###########
+<6>[   29.195330] usbcore: registered new interface driver rtl8192cu
+<6>[   29.230229] usb 3-1: new high speed USB device number 2 using sw-ehci
+<3>[   31.500265] init: untracked pid 272 exited
+<7>[   33.292783] sw_usb_enable_hcd: usbc_num = 2
+<7>[   33.292798] WRN:L877(drivers/usb/host/ehci_sun4i.c):ERR: sw_ehci is already enable, can not enable again
+<7>[   33.292811] WRN:L763(drivers/usb/host/ohci_sun4i.c):ERR: sw_ohci is already enable, can not enable again
+<7>[   33.292822] rtl8188eu driver version=v4.1.1_4235.20120606
+<7>[   33.292829] build time: Oct 18 2012 08:47:44
+<7>[   33.292836] ##########rtw_suspend_lock_init ###########
+<7>[   33.293052] register rtw_netdev_ops to netdev_ops
+<7>[   33.293069] rtw_wdev_alloc(padapter=e8fe9000)
+<7>[   33.370392] CHIP TYPE: RTL8188E
+<7>[   33.373571] 
+<7>[   33.373574] usb_endpoint_descriptor(0):
+<7>[   33.378906] bLength=7
+<7>[   33.429495] bDescriptorType=5
+<7>[   33.434401] bEndpointAddress=81
+<7>[   33.437565] wMaxPacketSize=200
+<7>[   33.485731] bInterval=0
+<7>[   33.497484] RT_usb_endpoint_is_bulk_in = 1
+<7>[   33.607540] 
+<7>[   33.607549] usb_endpoint_descriptor(1):
+<7>[   33.642169] bLength=7
+<7>[   33.656720] bDescriptorType=5
+<7>[   33.716084] bEndpointAddress=2
+<7>[   33.719141] wMaxPacketSize=200
+<7>[   33.731621] bInterval=0
+<7>[   33.757184] RT_usb_endpoint_is_bulk_out = 2
+<7>[   33.767768] 
+<7>[   33.767774] usb_endpoint_descriptor(2):
+<7>[   33.851737] bLength=7
+<7>[   33.861558] bDescriptorType=5
+<7>[   33.913107] bEndpointAddress=3
+<7>[   33.953090] wMaxPacketSize=200
+<7>[   33.982842] bInterval=0
+<7>[   34.005900] RT_usb_endpoint_is_bulk_out = 3
+<7>[   34.033617] nr_endpoint=3, in_num=1, out_num=2
+<7>[   34.033625] 
+<7>[   34.092586] USB_SPEED_HIGH
+<7>[   34.116645] Chip Version Info: CHIP_8188E_Normal_Chip_TSMC_A_CUT_1T1R_RomVer(0)
+<7>[   34.180587] RF_Type is 3!!
+<7>[   34.212608] _ConfigNormalChipOutEP_8188E OutEpQueueSel(0x05), OutEpNumber(2) 
+<7>[   34.212790] EEPROM type is E-FUSE
+<7>[   34.212799] ====> _ReadAdapterInfo8188EU
+<7>[   34.212997] Boot from EFUSE, Autoload OK !
+<7>[   34.578755] EEPROM ID=0x8129
+<7>[   34.591206] VID = 0x0BDA, PID = 0x8179
+<7>[   34.632154] Customer ID: 0x00, SubCustomer ID: 0xCD
+<7>[   34.632174] Hal_ReadPowerSavingMode88E...bHWPwrPindetect(0)-bHWPowerdown(0) ,bSupportRemoteWakeup(0)
+<7>[   34.632187] ### PS params=>  power_mgnt(1),usbss_enable(0) ###
+<7>[   34.632199] ======= Path 0, Channel 0 =======
+<7>[   34.632206] Index24G_CCK_Base[0][0] = 0x2e
+<7>[   34.632213] Index24G_BW40_Base[0][0] = 0x2e
+<7>[   34.632219] ======= Path 0, Channel 1 =======
+<7>[   34.632226] Index24G_CCK_Base[0][1] = 0x2e
+<7>[   34.632232] Index24G_BW40_Base[0][1] = 0x2e
+<7>[   34.632239] ======= Path 0, Channel 2 =======
+<7>[   34.632245] Index24G_CCK_Base[0][2] = 0x2e
+<7>[   34.632252] Index24G_BW40_Base[0][2] = 0x2e
+<7>[   34.632258] ======= Path 0, Channel 3 =======
+<7>[   34.632265] Index24G_CCK_Base[0][3] = 0x2e
+<7>[   34.632271] Index24G_BW40_Base[0][3] = 0x2e
+<7>[   34.632277] ======= Path 0, Channel 4 =======
+<7>[   34.632284] Index24G_CCK_Base[0][4] = 0x2e
+<7>[   34.632290] Index24G_BW40_Base[0][4] = 0x2e
+<7>[   34.632296] ======= Path 0, Channel 5 =======
+<7>[   34.632303] Index24G_CCK_Base[0][5] = 0x2e
+<7>[   34.632309] Index24G_BW40_Base[0][5] = 0x2e
+<7>[   34.632315] ======= Path 0, Channel 6 =======
+<7>[   34.632322] Index24G_CCK_Base[0][6] = 0x2e
+<7>[   34.632328] Index24G_BW40_Base[0][6] = 0x2e
+<7>[   34.632334] ======= Path 0, Channel 7 =======
+<7>[   34.632341] Index24G_CCK_Base[0][7] = 0x2e
+<7>[   34.632347] Index24G_BW40_Base[0][7] = 0x2e
+<7>[   34.632354] ======= Path 0, Channel 8 =======
+<7>[   34.632360] Index24G_CCK_Base[0][8] = 0x2e
+<7>[   34.632367] Index24G_BW40_Base[0][8] = 0x2e
+<7>[   34.632373] ======= Path 0, Channel 9 =======
+<7>[   34.632379] Index24G_CCK_Base[0][9] = 0x2c
+<7>[   34.632386] Index24G_BW40_Base[0][9] = 0x2c
+<7>[   34.632392] ======= Path 0, Channel 10 =======
+<7>[   34.632399] Index24G_CCK_Base[0][10] = 0x2c
+<7>[   34.632405] Index24G_BW40_Base[0][10] = 0x2c
+<7>[   34.632412] ======= Path 0, Channel 11 =======
+<7>[   34.632418] Index24G_CCK_Base[0][11] = 0x2c
+<7>[   34.632425] Index24G_BW40_Base[0][11] = 0x2c
+<7>[   34.632431] ======= Path 0, Channel 12 =======
+<7>[   34.632438] Index24G_CCK_Base[0][12] = 0x2c
+<7>[   34.632444] Index24G_BW40_Base[0][12] = 0x2c
+<7>[   34.632477] ======= Path 0, Channel 13 =======
+<7>[   34.632485] Index24G_CCK_Base[0][13] = 0x2c
+<7>[   34.632492] Index24G_BW40_Base[0][13] = 0x2c
+<7>[   34.632498] ======= Path 0, Channel 14 =======
+<7>[   34.632505] Index24G_CCK_Base[0][14] = 0x24
+<7>[   34.632511] Index24G_BW40_Base[0][14] = 0x2c
+<7>[   34.632518] ======= TxCount 0 =======
+<7>[   34.632524] CCK_24G_Diff[0][0]= 0
+<7>[   34.632532] OFDM_24G_Diff[0][0]= 0
+<7>[   34.632538] BW20_24G_Diff[0][0]= 0
+<7>[   34.632544] BW40_24G_Diff[0][0]= 0
+<7>[   34.632549] ======= TxCount 1 =======
+<7>[   34.632555] CCK_24G_Diff[0][1]= -2
+<7>[   34.632561] OFDM_24G_Diff[0][1]= -2
+<7>[   34.632567] BW20_24G_Diff[0][1]= -2
+<7>[   34.632573] BW40_24G_Diff[0][1]= -2
+<7>[   34.632578] ======= TxCount 2 =======
+<7>[   34.632584] CCK_24G_Diff[0][2]= -2
+<7>[   34.632590] OFDM_24G_Diff[0][2]= -2
+<7>[   34.632596] BW20_24G_Diff[0][2]= -2
+<7>[   34.632602] BW40_24G_Diff[0][2]= -2
+<7>[   34.632607] ======= TxCount 3 =======
+<7>[   34.632613] CCK_24G_Diff[0][3]= -2
+<7>[   34.632619] OFDM_24G_Diff[0][3]= -2
+<7>[   34.632625] BW20_24G_Diff[0][3]= -2
+<7>[   34.632631] BW40_24G_Diff[0][3]= -2
+<7>[   34.632637] EEPROMRegulatory = 0x0
+<7>[   34.632643] mlmepriv.ChannelPlan = 0x20
+<7>[   34.632649] EEPROM Customer ID: 0x 0
+<7>[   34.632656] EEPROM : AntDivCfg = 0, TRxAntDivType = 3
+<7>[   34.632662] Board Type: 0x 0
+<7>[   34.632668] ThermalMeter = 0x12
+<7>[   34.632677] <==== _ReadAdapterInfo8188EU in 420 ms
+<7>[   34.954553] rtw_register_early_suspend
+<7>[   34.954630] rtw_macaddr_cfg MAC Address  = 00:05:bc:13:82:c4
+<7>[   34.954642] MAC Address from pnetdev->dev_addr= 00:05:bc:13:82:c4
+<7>[   34.971150] bDriverStopped:1, bSurpriseRemoved:0, bup:0, hw_init_completed:0
+<6>[   34.977872] usbcore: registered new interface driver rtl8188eu
+<7>[   35.101438] rtw_android_priv_cmd: Android private cmd "BLOCK 1" on wlan0
+<4>[   35.134095] Thread-51 used greatest stack depth: 4920 bytes left
+<7>[   35.285250] +871x_drv - drv_open, bup=0
+<7>[   35.439288] rtl8188e_FirmwareDownload: fw_ver=4 fw_subver=0 sig=0x88e1
+<7>[   35.506927] _FWFreeToGo: Checksum report OK! REG_MCUFWDL:0x00030004
+<7>[   35.510248] _FWFreeToGo: Polling FW ready success!! REG_MCUFWDL:0x000300c6
+<7>[   35.510262] Set RF Chip ID to RF_6052 and RF type to 1T1R.
+<7>[   35.987412] pDM_Odm TxPowerTrackControl = 1
+<7>[   37.156861] MAC Address from REG_MACID = 00:05:bc:13:82:c4
+<7>[   37.177646] rtl8188eu_hal_init in 1890ms
+<7>[   37.198010] MAC Address = 00:05:bc:13:82:c4
+<7>[   37.223481] rtw_cfg80211_init_wiphy:rf_type=3
+<7>[   37.240157] -871x_drv - drv_open, bup=1
+<6>[   37.251156] ADDRCONF(NETDEV_UP): wlan0: link is not ready
+<7>[   37.256638] [rtw_wx_set_pmkid] IW_PMKSA_FLUSH!
+<7>[   37.290132] set_mode = IW_MODE_INFRA
+<7>[   37.331637] [rtw_wx_set_pmkid] IW_PMKSA_FLUSH!
+<7>[   37.366029] rtw_android_priv_cmd: Android private cmd "BLOCK 0" on wlan0
+<7>[   38.598241] UMP<2>: New session opened
+<7>[   38.765306] survey done event(5)
+<7>[   38.769163] =>rtw_wx_set_essid
+<7>[   38.774498] rtw_cfg80211_indicate_scan_done without scan req
+<7>[   38.780281] <=rtw_wx_set_essid, ret 0
+<7>[   38.803738] wpa_set_auth_algs, AUTH_ALG_OPEN_SYSTEM
+<7>[   38.819842] set_mode = IW_MODE_INFRA
+<7>[   38.821211] 
+<7>[   38.821216]  wpa_ie(length:22):
+<7>[   38.821226] 0x30 0x14 0x01 0x00 0x00 0x0f 0xac 0x02 
+<7>[   38.821235] 0x01 0x00 0x00 0x0f 0xac 0x04 0x01 0x00 
+<7>[   38.821244] 0x00 0x0f 0xac 0x02 0x00 0x00 0x00 0x00 
+<7>[   38.822888] Set BSSID under fw_state=0x00000008
+<7>[   38.822951] [by_bssid:1][assoc_ssid:][to_roaming:0] new candidate: GOUM(00:1f:5b:87:45:d1) rssi:-65
+<7>[   38.822964] rtw_select_and_join_from_scanned_queue: candidate: GOUM(00:1f:5b:87:45:d1)
+<7>[   38.822998] link to new AP
+<7>[   38.823048] =>rtw_wx_set_essid
+<7>[   38.823059] ssid=GOUM, len=4
+<7>[   38.823069] Set SSID under fw_state=0x00000088
+<7>[   38.823077] <=rtw_wx_set_essid, ret 0
+<7>[   38.993498] link to new AP
+<7>[   38.996263] issue_deauth to 00:1f:5b:87:45:d1
+<7>[   39.000709] issue_auth
+<7>[   39.004883] OnAuthClient
+<7>[   39.004917] network.SupportedRates[0]=82
+<7>[   39.004924] network.SupportedRates[1]=84
+<7>[   39.004931] network.SupportedRates[2]=8B
+<7>[   39.004937] network.SupportedRates[3]=96
+<7>[   39.004943] network.SupportedRates[4]=0C
+<7>[   39.004948] network.SupportedRates[5]=12
+<7>[   39.004954] network.SupportedRates[6]=18
+<7>[   39.004960] network.SupportedRates[7]=24
+<7>[   39.004966] network.SupportedRates[8]=30
+<7>[   39.004972] network.SupportedRates[9]=48
+<7>[   39.004978] network.SupportedRates[10]=60
+<7>[   39.004984] network.SupportedRates[11]=6C
+<7>[   39.004992] bssrate_len = 12
+<7>[   39.010176] OnAssocRsp
+<7>[   39.010207] report_join_res(3)
+<7>[   39.010217] rtw_joinbss_update_network
+<7>[   39.010227] +rtw_update_ht_cap()
+<7>[   39.010246] rtw_joinbss_update_stainfo
+<7>[   39.010253] ### Set STA_(0) info
+<7>[   39.010274] rtw_cfg80211_indicate_connect(padapter=e8fe9000)
+<6>[   39.011380] ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+<7>[   39.011638] HW_VAR_BASIC_RATE: BrateCfg(0x15f)
+<7>[   39.115260] WMM(0): 0, a42b
+<7>[   39.116459] WMM(1): 0, a44f
+<7>[   39.116590] WMM(2): 0, 5e4322
+<7>[   39.117335] WMM(3): 0, 2f3222
+<7>[   39.117346] HTOnAssocRsp
+<7>[   39.126726] 
+<7>[   39.126734]  ~~~~stastakey:unicastkey
+<7>[   39.129241] 
+<7>[   39.129251]  ~~~~stastakey:groupkey
+<7>[   39.129266] ==> rtw_set_key algorithm(2),keyid(2),key_mask(4)
+<7>[   39.131446] UpdateHalRAMask8188EUsb => mac_id:0, networkType:0x0b, mask:0x000fffff
+<7>[   39.131455] 	 ==> rssi_level:0, rate_bitmap:0x000ff005
+<7>[   39.131482] mlmeext_joinbss_event_callback ==>### MacID(0),Set Max Tx RPT MID(1)
+<7>[   39.131685] ### rtl8188e_set_FwMediaStatus_cmd: MStatus=1 MACID=0 
+<7>[   39.136955] rtl8188e_set_FwJoinBssReport_cmd mstatus(1)
+<7>[   39.140133] SetFwRsvdPagePkt
+<7>[   39.140209] SetFwRsvdPagePkt: Set RSVD page location to Fw
+<7>[   39.141985] rtl8188e_set_FwJoinBssReport_cmd: 1 Download RSVD success! DLBcnCount:1, poll:1
+<7>[   39.142546] Set RSVD page location to Fw.
+<7>[   39.142675] =>mlmeext_joinbss_event_callback
+<7>[   39.296696] UpdateHalRAMask8188EUsb => mac_id:0, networkType:0x0b, mask:0x000fffff
+<7>[   39.296707] 	 ==> rssi_level:2, rate_bitmap:0x000ff000
+<7>[   39.522496] 
+<7>[   39.522506]  ~~~~stastakey:groupkey
+<7>[   39.527488] ==> rtw_set_key algorithm(2),keyid(1),key_mask(6)
+<7>[   40.554276] UMP<2>: New session opened
+<7>[   40.836918] UMP<2>: Session closed
+<6>[   47.076291] sunxi-rtc sunxi-rtc: set time 2012-12-22 18:43:43
+<7>[   47.291033] rtw_set_ps_mode: Enter 802.11 power save
+<7>[   47.317403] rtl8188e_set_FwPwrMode_cmd: Mode=1 SmartPS=2 UAPSD=0
+<7>[   49.290280] rtw_set_ps_mode: Leave 802.11 power save
+<7>[   49.295274] rtl8188e_set_FwPwrMode_cmd: Mode=0 SmartPS=2 UAPSD=0
+<7>[   49.710074] wlan0: no IPv6 routers present
+<7>[   61.291155] rtw_set_ps_mode: Enter 802.11 power save
+<7>[   61.296154] rtl8188e_set_FwPwrMode_cmd: Mode=1 SmartPS=2 UAPSD=0
+<7>[  113.230178] rtw_set_ps_mode: Leave 802.11 power save
+<7>[  113.235395] rtl8188e_set_FwPwrMode_cmd: Mode=0 SmartPS=2 UAPSD=0
+<7>[  115.290154] rtw_set_ps_mode: Enter 802.11 power save
+<7>[  115.295140] rtl8188e_set_FwPwrMode_cmd: Mode=1 SmartPS=2 UAPSD=0
+<7>[  123.290340] rtw_set_ps_mode: Leave 802.11 power save
+<7>[  123.290364] rtl8188e_set_FwPwrMode_cmd: Mode=0 SmartPS=2 UAPSD=0
+<7>[  125.290358] rtw_set_ps_mode: Enter 802.11 power save
+<7>[  125.295344] rtl8188e_set_FwPwrMode_cmd: Mode=1 SmartPS=2 UAPSD=0
+<7>[  148.250164] rtw_set_ps_mode: Leave 802.11 power save
+<7>[  148.255289] rtl8188e_set_FwPwrMode_cmd: Mode=0 SmartPS=2 UAPSD=0
+<7>[  149.290304] rtw_set_ps_mode: Enter 802.11 power save
+<7>[  149.295293] rtl8188e_set_FwPwrMode_cmd: Mode=1 SmartPS=2 UAPSD=0
