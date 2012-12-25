@@ -1,12 +1,14 @@
-The 0 disk name = bootloader	/dev/block/nanda
-The 1 disk name = env		/dev/block/nandb
-The 2 disk name = boot		/dev/block/nandc
-The 3 disk name = system	/dev/block/nandd
-The 4 disk name = data		/dev/block/nande
-The 5 disk name = misc		/dev/block/nandf
-The 6 disk name = recovery	/dev/block/nandg
-The 7 disk name = cache		/dev/block/nandh
-The 8 disk name = private	/dev/block/nandi
-The 9 disk name = sysrecovery	/dev/block/nandj
-The 10 disk name = UDISK	/dev/block/nandk
+The 0 disk name = bootloader	/dev/block/nanda	32768		16 MB
+The 1 disk name = env		/dev/block/nandb	32768		16 MB
+The 2 disk name = boot		/dev/block/nandc	65536		32 MB
+The 3 disk name = system	/dev/block/nandd	1048576		512 MB
+The 4 disk name = data		/dev/block/nande	2097152		1024 MB
+The 5 disk name = misc		/dev/block/nandf	32768		16 MB
+The 6 disk name = recovery	/dev/block/nandg	65536		32 MB
+The 7 disk name = cache		/dev/block/nandh	262144		128 MB
+The 8 disk name = private	/dev/block/nandi	32768		16 MB
+The 9 disk name = sysrecovery	/dev/block/nandj	4096		2 MB
+The 10 disk name = UDISK	/dev/block/nandk	4157440		2030 MB
+
+Block size := 2048 x 1024 -> divide by 2048 and we get MB
 
