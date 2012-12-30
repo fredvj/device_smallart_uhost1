@@ -5,7 +5,12 @@
 /data       ext4	/dev/block/nande
 # /misc       mtd         misc
 /recovery   emmc	/dev/block/nandg
-/sdcard     vfat        /dev/block/mmcblk0p1        /dev/block/mmcblk0
 /system     ext4        /dev/block/nandd
-/sd-ext     ext4        /dev/block/mmcblk0p2
-/private    vfat	/dev/block/nandi
+/private    vfat        /dev/block/nandi
+
+
+# If we are booting from SD, we cannot have sd-ext
+# /sdcard     vfat        /dev/block/mmcblk0p1        /dev/block/mmcblk0
+# /sd-ext     ext4        /dev/block/mmcblk0p2
+/sdcard     vfat	/dev/block/mmcblk0p2
+
