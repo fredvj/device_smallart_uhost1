@@ -15,7 +15,8 @@ else
 endif
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_KERNEL):kernel
+	$(LOCAL_KERNEL):kernel \
+	device/smallart/uboot1/recovery/postrecoveryboot.sh:root/sbin/postrecoveryboot.sh
 
 $(call inherit-product, build/target/product/full.mk)
 
