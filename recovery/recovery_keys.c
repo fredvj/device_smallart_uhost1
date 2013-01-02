@@ -24,10 +24,12 @@ int device_handle_key(int key_code, int visible) {
 
             case KEY_2:
             case KEY_ENTER:
+            case BTN_MOUSE:
                 return SELECT_ITEM;
             
             case KEY_1:
             case KEY_ESC:
+            case BTN_BACK:
                     return GO_BACK;
         }
     }
