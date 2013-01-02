@@ -18,7 +18,13 @@ TARGET_GLOBAL_CFLAGS += -mtune=cortex-a8 -mfpu=neon -mfloat-abi=softfp
 TARGET_GLOBAL_CPPFLAGS += -mtune=cortex-a8 -mfpu=neon -mfloat-abi=softfp
 ARCH_ARM_HAVE_TLS_REGISTER := true
 
-BOARDS_HAS_VIBRATOR_IMPLEMENTATION := ../../device/smallart/uboot1/vibrator.c
+BOARD_HAS_VIBRATOR_IMPLEMENTATION := ../../device/smallart/uboot1/vibrator.c
+
+BOARD_USE_SKIA_LCDTEXT := true
+TARGET_BOOTANIMATION_PRELOAD := true
+TARGET_BOOTANIMATION_TEXTURE_CACHE := true
+
+BOARD_USE_LEGACY_TOUCHSCREEN := true
 
 BOARD_KERNEL_CMDLINE := console=ttyS0,115200 rw init=/init loglevel=8
 BOARD_KERNEL_BASE := 0x40000000
@@ -41,6 +47,7 @@ TARGET_RECOVERY_PRE_COMMAND := "echo -n boot-recovery | busybox dd of=/dev/block
 # Use this flag if the board has a ext4 partition larger than 2gb
 #BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/smallart/uboot1/recovery/recovery_keys.c
+BOARD_CUSTOM_GRAPHICS := ../../../device/smallart/uboot1/recovery/graphics.c
 
 TARGET_KERNEL_SOURCE := kernel/allwinner/common
 TARGET_KERNEL_CONFIG := sun4i_crane_defconfig
