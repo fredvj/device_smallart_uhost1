@@ -81,13 +81,13 @@ static int get_framebuffer(GGLSurface *fb)
     }
 
     vi.bits_per_pixel = PIXEL_SIZE * 8;
-    vi.red.offset     = 24;
+    vi.red.offset     = 16;
     vi.red.length     = 8;
-    vi.green.offset   = 16;
+    vi.green.offset   = 8;
     vi.green.length   = 8;
-    vi.blue.offset    = 16;
+    vi.blue.offset    = 0;
     vi.blue.length    = 8;
-    vi.transp.offset  = 0;
+    vi.transp.offset  = 24;
     vi.transp.length  = 8;
 
     if (ioctl(fd, FBIOPUT_VSCREENINFO, &vi) < 0) {
