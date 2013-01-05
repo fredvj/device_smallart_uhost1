@@ -1,7 +1,7 @@
 USE_CAMERA_STUB := true
 
 # inherit from the proprietary version
--include vendor/smallart/uboot1/BoardConfigVendor.mk
+-include vendor/smallart/uhost1/BoardConfigVendor.mk
 
 # BOARD_USES_UBOOT := true
 
@@ -18,7 +18,7 @@ TARGET_GLOBAL_CFLAGS += -mtune=cortex-a8 -mfpu=neon -mfloat-abi=softfp
 TARGET_GLOBAL_CPPFLAGS += -mtune=cortex-a8 -mfpu=neon -mfloat-abi=softfp
 ARCH_ARM_HAVE_TLS_REGISTER := true
 
-BOARD_HAS_VIBRATOR_IMPLEMENTATION := ../../device/smallart/uboot1/vibrator.c
+BOARD_HAS_VIBRATOR_IMPLEMENTATION := ../../device/smallart/uhost1/vibrator.c
 
 BOARD_USE_SKIA_LCDTEXT := true
 TARGET_BOOTANIMATION_PRELOAD := true
@@ -37,7 +37,7 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 268435456
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 1073741824
 BOARD_FLASH_BLOCK_SIZE := 4096
 
-# TARGET_PREBUILT_KERNEL := device/smallart/uboot1/prebuilt/kernel
+# TARGET_PREBUILT_KERNEL := device/smallart/uhost1/prebuilt/kernel
 
 TARGET_USERIMAGES_USE_EXT4 := true
 
@@ -46,8 +46,8 @@ TARGET_RECOVERY_PRE_COMMAND := "echo -n boot-recovery | busybox dd of=/dev/block
 #BOARD_HAS_NO_SELECT_BUTTON := true
 # Use this flag if the board has a ext4 partition larger than 2gb
 #BOARD_HAS_LARGE_FILESYSTEM := true
-BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/smallart/uboot1/recovery/recovery_keys.c
-BOARD_CUSTOM_GRAPHICS := ../../../device/smallart/uboot1/recovery/graphics.c
+BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/smallart/uhost1/recovery/recovery_keys.c
+BOARD_CUSTOM_GRAPHICS := ../../../device/smallart/uhost1/recovery/graphics.c
 
 TARGET_KERNEL_SOURCE := kernel/allwinner/common
 TARGET_KERNEL_CONFIG := sun4i_crane_defconfig
