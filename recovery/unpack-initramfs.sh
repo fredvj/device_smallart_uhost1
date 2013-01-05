@@ -101,7 +101,7 @@ function search_cpio()
         fi
     done 
 
-    [ $compression_name = "bzip" ] && cpio_compressed_start=$((cpio_compressed_start - 4))
+    [ "$compression_name" = "bzip" ] && cpio_compressed_start=$((cpio_compressed_start - 4))
     echo "-I- CPIO compression type detected = $compression_name | offset = $cpio_compressed_start"
 
     [ -z $DEBUG ] || echo
