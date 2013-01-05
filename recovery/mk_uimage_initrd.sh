@@ -7,7 +7,7 @@ set -x
 
 # Set the required folders
 
-OUTDIR=../../../../out/target/product/uboot1
+OUTDIR=../../../../out/target/product/uhost1
 OUTFILE=uInitrd
 RECOVERYROOT=${OUTDIR}/recovery/root
 RECOVERYRAMDISK=ramdisk-recovery.cpio

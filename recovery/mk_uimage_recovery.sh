@@ -3,14 +3,14 @@ set -x
 
 # Set the required folders
 
-OUTDIR=../../../../out/target/product/uboot1
+OUTDIR=../../../../out/target/product/uhost1
 KERNELDIR=../../../../kernel/allwinner/common
 
 # As we ask make to go to KERNELDIR, the following folders are relativ to it
 
 # KERNELCONFIG=sun4i_crane_defconfig
-KERNELCONFIG=uboot1_recovery_defconfig
-RECOVERYROOTDIR=../../../out/target/product/uboot1/recovery/root
+KERNELCONFIG=uhost1_recovery_defconfig
+RECOVERYROOTDIR=../../../out/target/product/uhost1/recovery/root
 TOOLCHAIN=../../../prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/arm-eabi-
 
 # Cleanup kernel directory
