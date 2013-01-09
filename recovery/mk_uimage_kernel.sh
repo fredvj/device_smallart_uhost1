@@ -3,7 +3,7 @@
 # Copyright (C) 2012, fredvj
 #
 
-set -x
+# set -x
 
 # Set the required folders
 
@@ -12,4 +12,4 @@ KERNELDIR=../prebuilt
 
 # Run mkimage to create an uImage
 
-mkimage -A arm -O linux -T kernel -C none -a 40008000 -e 40008000 -n "Android Kernel Image" -d "${KERNELDIR}/kernel" "${OUTDIR}/uImage"
+mkimage -A arm -O linux -T kernel -C none -a 40008000 -e 40008000 -n "Android Kernel Image" -d "${KERNELDIR}/kernel" "${KERNELDIR}/uImage"
