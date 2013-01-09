@@ -1,0 +1,20 @@
+# All the steps to generate a bootable recovery SD card from source
+# You can skip to the final step if you are fine with the prebuilts
+
+- cd [cm dir]
+- . build/envsetup.sh
+- lunch cm_uhost1-eng
+- mka recoveryimage
+- cd [cm dir]/device/smallart/uhost1/recovery
+- ./mk_uimage_kernel.sh
+- ./mk_uimage_initrd.sh
+- ./mkscriptbin.sh
+- ./mkbootscr.sh
+
+# Final step to write it all to your SD card
+
+- cd [cm dir]/device/smallart/uhost1/recovery
+- ./mk_bootable_sd [sd card device]
+
+# This can be something like "./mk_bootable_sd /dev/sdb"
+# Call "dmesg" to find the device after inserting your card
