@@ -5,7 +5,7 @@ PRODUCT_RELEASE_NAME := uhost1
 $(call inherit-product, vendor/cm/config/common_full_tablet_wifionly.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/smallart/uhost1/device_uhost1.mk)
+$(call inherit-product, device/smallart/uhost1/full_uhost1.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := uhost1
