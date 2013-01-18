@@ -31,6 +31,17 @@ PRODUCT_COPY_FILES += \
         device/smallart/uhost1/configuration/ueventd.sun4i.rc:root/ueventd.sun4i.rc \
         device/smallart/uhost1/configuration/media_profiles.xml:system/etc/media_profiles.xml
 
+# HAL libraries
+
+PRODUCTS_COPY_FILES += \
+	device/smallart/uhost1/prebuilt/audio.primary.sun4i.so:system/lib/hw/audio.primary.sun4i.so \
+	device/smallart/uhost1/prebuilt/camera.sun4i.so:system/lib/hw/camera.sun4i.so \
+	device/smallart/uhost1/prebuilt/display.sun4i.so:system/lib/hw/display.sun4i.so \
+	device/smallart/uhost1/prebuilt/gps.sun4i.so:system/lib/hw/gps.sun4i.so \
+	device/smallart/uhost1/prebuilt/gralloc.sun4i.so:system/lib/hw/gralloc.sun4i.so \
+	device/smallart/uhost1/prebuilt/hwcomposer.sun4i.so:system/lib/hw/hwcomposer.sun4i.so \
+	device/smallart/uhost1/prebuilt/lights.sun4i.so:system/lib/hw/lights.sun4i.so
+
 
 # Permissions
 
