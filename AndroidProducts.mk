@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/device_uhost1.mk
+    $(LOCAL_DIR)/full_uhost1.mk
