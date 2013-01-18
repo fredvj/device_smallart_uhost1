@@ -1,3 +1,37 @@
 #
-# system.prop for uhost1
+# system.prop for Smallart Uhost1
 #
+
+sys.usb.config=adb
+persist.service.adb.enable=1
+persist.service.adb.root=1
+persist.sys.usb.config=mass_storage,adb
+persist.sys.timezone=Europe/Berlin
+
+# Wireless LAN
+wifi.interface=wlan0
+wifi.debug=true
+wifi.supplicant_scan_intervall=15
+
+# Graphics
+debug.egl.hw=1
+ro.display.switch=1
+ro.opengles.version=131072
+persist.sys.strictmode.visual=0
+persist.sys.strictmode.disable=1
+hwui.render_dirty_regions=false
+media.stagefright.maxsubfont=72
+ro.sf.lcd_density=160
+
+# Audio
+audio.routing=2
+audio.defCurve=false
+
+# Mouse
+ro.softmouse.left.code=6
+ro.softmouse.right.code=14
+ro.softmouse.top.code=67
+ro.softmouse.bottom.code=10
+ro.softmouse.leftbtn.code=2
+ro.softmouse.midbtn.code=-1
+ro.softmouse.rightbtn.code=-1
