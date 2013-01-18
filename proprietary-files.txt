@@ -13,16 +13,12 @@ vendor/modules/RT2870STACard.dat
 vendor/modules/ar6003.ko
 vendor/modules/ar6302.ko
 vendor/modules/asix.ko
-vendor/modules/ath6k
-vendor/modules/ath6k/AR6003
 vendor/modules/ath6k/AR6003/A31_Script.psr
-vendor/modules/ath6k/AR6003/hw2.0
 vendor/modules/ath6k/AR6003/hw2.0/athtcmd_ram.bin
 vendor/modules/ath6k/AR6003/hw2.0/athwlan.bin.z77
 vendor/modules/ath6k/AR6003/hw2.0/bdata.SD31.bin
 vendor/modules/ath6k/AR6003/hw2.0/data.patch.hw2_0.bin
 vendor/modules/ath6k/AR6003/hw2.0/otp.bin.z77
-vendor/modules/ath6k/AR6003/hw2.1.1
 vendor/modules/ath6k/AR6003/hw2.1.1/athtcmd_ram.bin
 vendor/modules/ath6k/AR6003/hw2.1.1/athwlan.bin
 vendor/modules/ath6k/AR6003/hw2.1.1/athwlan_mobile.bin
