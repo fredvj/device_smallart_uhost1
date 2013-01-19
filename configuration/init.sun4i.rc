@@ -3,11 +3,12 @@ import init.sun4i.usb.rc
 on early-init
 	export EXTERNAL_STORAGE /mnt/sdcard
 	mkdir /mnt/sdcard 0000 system system
-	# for backwards compatibility
-	symlink /mnt/sdcard /sdcard
-	symlink /mnt/extsd /extsd
-	
 	mkdir /mnt/extsd 0000 system system
+
+        # for backwards compatibility
+        symlink /mnt/sdcard /sdcard
+        symlink /mnt/extsd /extsd
+
 	mkdir /mnt/usbhost0 0000 system system
 	mkdir /mnt/usbhost1 0000 system system
 	mkdir /mnt/usbhost2 0000 system system
@@ -41,6 +42,25 @@ on fs
 	mkdir /mnt/private 0000 system system
 	mount vfat /dev/block/nandi /mnt/private
 
+on post-fs
+	# Bluetooth related permissions
+	chmod 0660 /dev/ttyS1
+	chown bluetooth bluetooth /dev/ttyS1
+
+	chown bluetooth bluetooth /sys/class/rfkill/rfkill0/type
+	chown bluetooth bluetooth /sys/class/rfkill/rfkill0/state
+	chmod 0660 /sys/class/rfkill/rfkill0/state
+	chown bluetooth bluetooth /sys/class/rfkill/rfkill1/type
+	chown bluetooth bluetooth /sys/class/rfkill/rfkill1/state
+	chmod 0660 /sys/class/rfkill/rfkill1/state
+	write /sys/class/rfkill/rfkill0/state 0
+	setprop rw.bluetooth.status "0"
+
+on post-fs-data
+	mkdir /data/misc/wifi 0771 wifi wifi
+	mkdir /data/misc/wifi/sockets 0771 wifi wifi
+	mkdir /data/misc/dhcp 0771 dhcp dhcp
+
 on boot
 # Touchpad driver
 	insmod /system/vendor/modules/ft5x_ts.ko
@@ -73,21 +93,9 @@ on boot
 	insmod /system/vendor/modules/cdc_eem.ko
 	insmod /system/vendor/modules/cdc_subset.ko
 
-# Bluetooth related permissions
-	chmod 0660 /dev/ttyS1
-	chown bluetooth bluetooth /dev/ttyS1
-	
 # Change system/etc folder shell permission
 	chmod 0777 /system/etc/to_sdcard.sh
 	chmod 0777 /system/etc/to_ext_sdcard.sh	
-
-# Change rfkill permissions for bluetooth power management
-	chmod 0660 /sys/class/rfkill/rfkill0/state
-	chmod 0660 /sys/class/rfkill/rfkill0/type
-	chown bluetooth bluetooth /sys/class/rfkill/rfkill0/state
-	chown bluetooth bluetooth /sys/class/rfkill/rfkill0/type
-	write /sys/class/rfkill/rfkill0/state 0
-	setprop rw.bluetooth.status "0"
 
 # PAN, Bluetooth ReverseTether DHCP service
 
@@ -111,3 +119,21 @@ service wpa_supplicant /system/bin/wpa_supplicant -Dwext -iwlan0 \
 	disabled
 	oneshot
 
+service dhcpcd_wlan0	/system/bin/dhcpcd -ABKL
+	class main
+	disabled
+	oneshot
+
+service iprenew_wlan0	/system/bin/dhcpcd -n
+	class main
+	disabled
+	oneshot
+
+# Bluetooth HCI Attach
+
+service hciattach	/system/bin/hciattach -n -s 115200 /dev/ttyS1 rda 1500000
+	class main
+	user root
+	group bluetooth net_bt_admin
+	disabled
+	oneshot
