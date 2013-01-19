@@ -12,6 +12,7 @@ persist.sys.timezone=Europe/Berlin
 wifi.interface=wlan0
 wifi.debug=true
 wifi.supplicant_scan_intervall=15
+ro.carrier=wifi-only
 
 # Graphics
 debug.egl.hw=1
