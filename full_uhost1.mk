@@ -17,10 +17,32 @@ else
 	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
 
+PRODUCT_CHARACTERISTICS := tablet
+
+PRODUCT_TAGS += dalvik.gc.type-precise
+
 PRODUCT_COPY_FILES += \
 	$(LOCAL_KERNEL):kernel
 
 $(call inherit-product, build/target/product/full.mk)
+
+PRODUCT_PACKAGES += \
+	make_ext4fs \
+	e2fsck \
+	setup_fs \
+	com.android.future.usb.accessory
+
+# Hardware support
+
+PRODUCT_PACKAGES += \
+	audio.primary.sun4i \
+	audio_policy.default \
+	camera.sun4i \
+	display.sun4i \
+	gralloc.sun4i \
+	hwcomposer.sun4i \
+	lights.sun4i \
+	sensors.sun4i
 
 # Vold config, boot logo & init scripts
 
@@ -34,12 +56,8 @@ PRODUCT_COPY_FILES += \
 # HAL libraries
 
 PRODUCTS_COPY_FILES += \
-	device/smallart/uhost1/prebuilt/audio.primary.sun4i.so:system/lib/hw/audio.primary.sun4i.so \
 	device/smallart/uhost1/prebuilt/camera.sun4i.so:system/lib/hw/camera.sun4i.so \
-	device/smallart/uhost1/prebuilt/display.sun4i.so:system/lib/hw/display.sun4i.so \
 	device/smallart/uhost1/prebuilt/gps.sun4i.so:system/lib/hw/gps.sun4i.so \
-	device/smallart/uhost1/prebuilt/gralloc.sun4i.so:system/lib/hw/gralloc.sun4i.so \
-	device/smallart/uhost1/prebuilt/hwcomposer.sun4i.so:system/lib/hw/hwcomposer.sun4i.so \
 	device/smallart/uhost1/prebuilt/lights.sun4i.so:system/lib/hw/lights.sun4i.so
 
 
