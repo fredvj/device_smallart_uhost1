@@ -1,6 +1,9 @@
 # Release name
 PRODUCT_RELEASE_NAME := uhost1
 
+# Select the right boot animation
+TARGET_BOOTANIMATION_NAME := horizontal-1280x800
+
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_tablet_wifionly.mk)
 
