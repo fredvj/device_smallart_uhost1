@@ -16,27 +16,18 @@ on early-init
 	mkdir /mnt/sata 0000 system system
 	
 on fs
+	# Mount /system
 	mount ext4 /dev/block/nandd /system wait noatime nodev barrier=0
 
-# try to mount /data
-	wait /dev/block/nande
-	# mount ext4 /dev/block/nande /data wait noatime nosuid nodev barrier=0
-	# setupfs /dev/block/nande	
-	# umount /data
-	exec /system/bin/logwrapper /system/bin/e2fsck -y /dev/block/nande    
-	exec /system/bin/busybox mount -t ext4 -o noatime,nosuid,nodev,barrier=0,journal_checksum,noauto_da_alloc /dev/block/nande /data 
+	# Mount /data
+	mount ext4 /dev/block/nande /data wait noatime nosuid nodev barrier=0
 
-# try to mount /cache
-	wait /dev/block/nandh
-	# mount ext4 /dev/block/nandh /cache wait noatime nosuid nodev barrier=0
-	# setupfs /dev/block/nandh
-	# umount /cache
-  	exec /system/bin/logwrapper /system/bin/e2fsck -y /dev/block/nandh 
-	exec /system/bin/busybox mount -t ext4 -o noatime,nosuid,nodev,barrier=0,journal_checksum,noauto_da_alloc /dev/block/nandh /cache 
+	# Mount /cache
+	mount ext4 /dev/block/nandh /cache wait noatime nosuid nodev barrier=0
         
 	format_userdata /dev/block/nandk ji
 
-# try to mount /private
+	# Mount /private
 	export PRIVATE_STORAGE /mnt/private
 	format_userdata /dev/block/nandi PRIVATE
 	mkdir /mnt/private 0000 system system
