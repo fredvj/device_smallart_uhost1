@@ -65,6 +65,9 @@
 
     <bool name="config_showNavigationBar">false</bool>
 
+    <!-- Don't show lock screen before unlock screen (PIN/pattern/password) -->
+    <bool name="config_enableLockBeforeUnlockScreen">false</bool>
+
     <!-- See "~/cyanogenmod-ics/frameworks/base/packages/SystemUI/src/com/android/systemui/statusbar/tablet" for other settings -->
 
     <bool name="config_hasDockBattery">false</bool>
