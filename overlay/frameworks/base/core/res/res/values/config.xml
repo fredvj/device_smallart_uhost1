@@ -65,6 +65,10 @@
 
     <bool name="config_showNavigationBar">false</bool>
 
+    <!-- See "~/cyanogenmod-ics/frameworks/base/packages/SystemUI/src/com/android/systemui/statusbar/tablet" for other settings -->
+
+    <bool name="config_hasDockBattery">false</bool>
+
     <!-- Is the notification LED intrusive? Used to decide if there should be a disable option -->
     <bool name="config_intrusiveNotificationLed">true</bool>
 
