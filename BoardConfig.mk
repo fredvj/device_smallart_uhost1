@@ -23,6 +23,8 @@ TARGET_SPECIFIC_HEADER_PATH := device/smallart/uhost1/include
 
 BOARD_HAS_VIBRATOR_IMPLEMENTATION := ../../device/smallart/uhost1/vibrator.c
 
+BOARD_HAVE_BLUETOOTH := true
+
 BOARD_WIFI_VENDOR := realtek
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 BOARD_WPA_SUPPLICANT_DRIVER := WEXT

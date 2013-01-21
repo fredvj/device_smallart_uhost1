@@ -63,6 +63,10 @@ PRODUCTS_COPY_FILES += \
 	device/smallart/uhost1/prebuilt/gps.sun4i.so:system/lib/hw/gps.sun4i.so \
 	device/smallart/uhost1/prebuilt/lights.sun4i.so:system/lib/hw/lights.sun4i.so
 
+# Bluetooth config
+
+PRODUCT_COPY_FILES += \
+        system/bluetooth/data/main.conf:system/etc/bluetooth/main.conf
 
 # Permissions
 
