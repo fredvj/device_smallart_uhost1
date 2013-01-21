@@ -139,7 +139,7 @@ D/tinyalsa(  602): mix id:15 name:ADC Input Mux
 /* ALSA cards for A10 */
 #define CARD_OMAP4_ABE 0
 #define CARD_OMAP4_HDMI 1
-#define CARD_TUNA_DEFAULT CARD_OMAP4_ABE
+#define CARD_TUNA_DEFAULT CARD_OMAP4_HDMI
 
 /* ALSA ports for A10 */
 #define PORT_MM 0
@@ -1154,14 +1154,12 @@ static int start_output_stream(struct tuna_stream_out *out)
     }
     /* S/PDIF takes priority over HDMI audio. In the case of multiple
      * devices, this will cause use of S/PDIF or HDMI only */
+
     out->config.rate = MM_FULL_POWER_SAMPLING_RATE;
-    if (adev->devices & AUDIO_DEVICE_OUT_DGTL_DOCK_HEADSET)
-        port = PORT_SPDIF;
-    else if(adev->devices & AUDIO_DEVICE_OUT_AUX_DIGITAL) {
-        card = CARD_OMAP4_HDMI;
-        port = PORT_HDMI;
-        out->config.rate = MM_LOW_POWER_SAMPLING_RATE;
-    }
+    card = CARD_OMAP4_HDMI;
+    port = PORT_HDMI;
+    out->config.rate = MM_LOW_POWER_SAMPLING_RATE;
+
     /* default to low power: will be corrected in out_write if necessary before first write to
      * tinyalsa.
      */
@@ -2714,7 +2712,7 @@ struct audio_module HAL_MODULE_INFO_SYM = {
         .version_major = 1,
         .version_minor = 0,
         .id = AUDIO_HARDWARE_MODULE_ID,
-        .name = "Sunxi audio HW HAL",
+        .name = "Smallart Uhost1 Audio HAL",
         .author = "The Android Open Source Project",
         .methods = &hal_module_methods,
     },

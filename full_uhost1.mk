@@ -35,8 +35,10 @@ PRODUCT_PACKAGES += \
 # Hardware support
 
 PRODUCT_PACKAGES += \
+	audio.a2dp.default \
 	audio.primary.sun4i \
 	audio_policy.default \
+	libaudioutils \
 	camera.sun4i \
 	display.sun4i \
 	gralloc.sun4i \
