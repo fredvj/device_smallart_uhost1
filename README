@@ -8,12 +8,13 @@
 #
 
 USB ADB                 : Okay
-USB Mass Strorage       : tbd
+USB Mass Strorage       : Okay
 Video                   : Okay
-Audio                   : tbd
+Audio                   : Okay
 WLAN                    : Okay
 WLAN Hotspot            : tbd
 Keyboard                : tbd
+Bluetooth		: tbd
 Memory                  : Okay
 
 #
@@ -22,3 +23,4 @@ Memory                  : Okay
 2013-01-11:	Recovery booting from Micro SD can be built
 		See README in recovery folder for details
 2013-01-21:	Video & WLAN working
+		It looks like Sound is working now
