@@ -84,6 +84,9 @@ on boot
 	insmod /system/vendor/modules/cdc_eem.ko
 	insmod /system/vendor/modules/cdc_subset.ko
 
+# WLAN ?
+	insmod /system/vendor/modules/8188eu.ko
+
 # Change system/etc folder shell permission
 	chmod 0777 /system/etc/to_sdcard.sh
 	chmod 0777 /system/etc/to_ext_sdcard.sh	
