@@ -7,17 +7,18 @@
 # Device is available from a couple of retailers
 #
 
-USB ADB                 : tbd
+USB ADB                 : Okay
 USB Mass Strorage       : tbd
-Video                   : tbd
+Video                   : Okay
 Audio                   : tbd
-WLAN                    : tbd
+WLAN                    : Okay
 WLAN Hotspot            : tbd
 Keyboard                : tbd
-Memory                  : tbd
+Memory                  : Okay
 
 #
 
 2012-12-23:	First steps. Settings up environment
 2013-01-11:	Recovery booting from Micro SD can be built
 		See README in recovery folder for details
+2013-01-21:	Video & WLAN working
