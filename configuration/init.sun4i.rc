@@ -132,3 +132,9 @@ service hciattach /system/bin/hciattach -n /dev/ttyS1 any 115200
 	disabled
 	oneshot
 
+# Set some defaults for the Smallart Uhost1
+
+service uhost1_defaults /system/bin/logwrapper /system/bin/sh /system/etc/default-settings.sh
+	class main
+	user root
+	oneshot
