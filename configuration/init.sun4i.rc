@@ -113,21 +113,22 @@ service wpa_supplicant /system/bin/wpa_supplicant -Dwext -iwlan0 \
 	disabled
 	oneshot
 
-service dhcpcd_wlan0	/system/bin/dhcpcd -ABKL
+service dhcpcd_wlan0 /system/bin/dhcpcd -ABKL
 	class main
 	disabled
 	oneshot
 
-service iprenew_wlan0	/system/bin/dhcpcd -n
+service iprenew_wlan0 /system/bin/dhcpcd -n
 	class main
 	disabled
 	oneshot
 
 # Bluetooth HCI Attach
 
-service hciattach	/system/bin/hciattach -n -s 115200 /dev/ttyS1 rda 1500000
+service hciattach /system/bin/hciattach -n /dev/ttyS1 any 115200
 	class main
 	user root
 	group bluetooth net_bt_admin
 	disabled
 	oneshot
+
