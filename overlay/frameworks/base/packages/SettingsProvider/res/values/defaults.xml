@@ -1,17 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Screen -->
     <bool name="def_dim_screen">false</bool>
     <integer name="def_screen_off_timeout">1800000</integer>
-    <bool name="def_accelerometer_rotation">false</bool>
-    <!-- bool name="def_lockscreen_disabled">true</bool -->
-    <!-- Notifications use ringer volume -->
-    <bool name="def_notifications_use_ring_volume">false</bool>
-    <!-- Default for Settings.System.USER_ROTATION -->
-    <integer name="def_user_rotation">0</integer>
-    <!-- Development settings -->
     <!-- bool name="def_stay_on_while_plugged_in">true</bool -->
+
+    <!-- Rotation -->
+    <bool name="def_accelerometer_rotation">false</bool>
+    <integer name="def_user_rotation">0</integer>
+
+    <!-- Time & Date -->
+    <bool name="def_auto_time">true</bool>
+    <bool name="def_auto_time_zone">true</bool>
+    <!-- integer name="def_time_12_24">24</integer -->
+
+    <!-- Disable the battery icon -->
+    <!-- integer name="def_status_bar_battery">2</integer -->
+
+    <!-- Specify the things that can be toggled -->
+    <!-- string name="def_expanded_widget_buttons_tablet">pref_bluetooth_toggle\|pref_wifi_toggle\|pref_sound_toggle</string -->
+
+    <!-- Notifications -->
+    <bool name="def_notifications_use_ring_volume">false</bool>
+    <!-- string name="def_notification_sound">content://media/internal/audio/media/59</string -->
+
+    <!-- Various defaults -->
     <bool name="def_bluetooth_on">false</bool>
     <bool name="def_wifi_on">false</bool>
-    <!-- integer name="def_battery_style">4</integer -->
     <bool name="def_install_non_market_apps">true</bool>
+    <!-- bool name="def_lockscreen.disabled">true</bool -->
+    <!-- bool name="def_mock_location">false</bool -->
 </resources>
