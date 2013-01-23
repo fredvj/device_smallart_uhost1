@@ -13,7 +13,7 @@ Video                   : Okay
 Audio                   : Okay
 WLAN                    : Okay
 WLAN Hotspot            : tbd
-Keyboard                : tbd
+Keyboard                : tbd - Layouts
 Bluetooth		: tbd
 Memory                  : Okay
 
@@ -24,3 +24,6 @@ Memory                  : Okay
 		See README in recovery folder for details
 2013-01-21:	Video & WLAN working
 		It looks like Sound is working now
+2013-01-22:	Settings like 'no battery icon' are written by a service
+		Looks like we are failing during first start
+		Will have to add a dependency and wait for /data to become available
