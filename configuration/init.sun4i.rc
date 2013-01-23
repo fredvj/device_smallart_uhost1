@@ -91,6 +91,10 @@ on boot
 	chmod 0777 /system/etc/to_sdcard.sh
 	chmod 0777 /system/etc/to_ext_sdcard.sh	
 
+on property:sys.boot_completed=1
+# Last action is to start uhost1_defaults
+	start uhost1_defaults
+
 # PAN, Bluetooth ReverseTether DHCP service
 
 service dhcpcd_bnep0 /system/bin/dhcpcd -ABKL
@@ -137,4 +141,5 @@ service hciattach /system/bin/hciattach -n /dev/ttyS1 any 115200
 service uhost1_defaults /system/bin/logwrapper /system/bin/sh /system/etc/default-settings.sh
 	class main
 	user root
+	disabled
 	oneshot

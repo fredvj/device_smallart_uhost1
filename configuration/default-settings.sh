@@ -12,6 +12,14 @@ DATABASE=/data/data/com.android.providers.settings/databases/settings.db
 # Make sure we just set the default once during initial setup
 INITIALIZED=`$SQLCMD $DATABASE "select value from system where name='smart_tv_initialized';"`
 
+# Check for errors
+
+if [ "$?" != "0" ]
+then
+	echo "Failed to initialize default for Smallart Uhost1 - cannot talk to database"
+	exit 1
+fi
+
 if [ "$INITIALIZED" = "" ]
 then
 	echo "Initializing defaults for Smallart Uhost1"
