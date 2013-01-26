@@ -123,11 +123,6 @@ lib/libUMP.so
 
 usr/idc/ft5x_ts.idc
 
-usr/keychars/de_keyboard.kcm
-usr/keychars/fr_keyboard.kcm
-
 usr/keylayout/axp20-supplyer.kl
-usr/keylayout/de_keyboard.kl
-usr/keylayout/fr_keyboard.kl
 usr/keylayout/sun4i-ir.kl
 usr/keylayout/sun4i-keyboard.kl
