@@ -22,17 +22,22 @@
     <string name="lockscreen_carrier_default"></string>
 
     <!-- Title for the Phone Options dialog to lock the screen, turn off the phone etc. -->
-    <string name="power_dialog">Geräte Optionen</string>
+    <string name="power_dialog">Device options</string>
 
     <!-- Button to reboot the phone, within the Phone Options dialog -->
-    <string name="reboot_system">Gerät neu starten</string>
+    <string name="reboot_system" product="default">Reboot device</string>
+    <string name="reboot_system" product="tablet">Reboot device</string>
 
     <!-- Shutdown Confirmation Dialog.  When the user chooses to power off the phone, there will be a confirmation dialog.  This is the message. -->
-    <string name="shutdown_confirm">Gerät wird heruntergefahren.</string>
+    <string name="shutdown_confirm" product="default">Your device will shut down.</string>
+    <string name="shutdown_confirm" product="tablet">Your device will shut down.</string>
+
 
     <!-- Reboot Confirmation Dialog.  When the user chooses to reboot the phone, there will be a confirmation dialog.  This is the message. -->
-    <string name="reboot_confirm">Gerät wird neu gestartet.</string>
+    <string name="reboot_confirm">Your device will reboot.</string>
 
     <!-- Title of the Global Actions Dialog -->
-    <string name="global_actions">Geräte Optionen</string>
+    <string name="global_actions" product="default">Device options</string>
+    <string name="global_actions" product="tablet">Device options</string>
+
 </resources>
