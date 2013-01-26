@@ -5,10 +5,11 @@ $(call inherit-product, device/common/gps/gps_eu_supl.mk)
 
 $(call inherit-product-if-exists, vendor/smallart/uhost1/uhost1-vendor.mk)
 
-DEVICE_PACKAGE_OVERLAYS += device/smallart/uhost1/overlay
+DEVICE_PACKAGE_OVERLAYS := \
+	device/smallart/uhost1/overlay
 
 # Inherit dalvik parameters
-$(call inherit-product, frameworks/base/build/phone-hdpi-512-dalvik-heap.mk)
+$(call inherit-product, frameworks/base/build/tablet-dalvik-heap.mk)
 
 LOCAL_PATH := device/smallart/uhost1
 ifeq ($(TARGET_PREBUILT_KERNEL),)
@@ -69,6 +70,13 @@ PRODUCTS_COPY_FILES += \
 PRODUCT_COPY_FILES += \
         system/bluetooth/data/main.conf:system/etc/bluetooth/main.conf
 
+# Keyboard support files
+
+PRODUCT_COPY_FILES += \
+	device/smallart/uhost1/prebuilt/qwertz.kcm:system/usr/keychars/qwertz.kcm \
+	device/smallart/uhost1/prebuilt/qwertz.kl:system/usr/keylayout/qwertz.kl \
+	device/smallart/uhost1/configuration/german-keyboard.sh:system/bin/german-keyboard.sh
+
 # Permissions
 
 PRODUCT_COPY_FILES += \
@@ -83,6 +91,9 @@ PRODUCT_COPY_FILES += \
         frameworks/base/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml \
         frameworks/base/data/etc/com.tmobile.software.themes.xml:system/etc/permissions/com.tmobile.software.themes.xml \
         packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:system/etc/permissions/android.software.live_wallpaper.xml
+
+PRODUCT_AAPT_CONFIG := normal large tvdpi hdpi
+PRODUCT_AAPT_PREF_CONFIG := tvdpi
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 PRODUCT_NAME := full_uhost1

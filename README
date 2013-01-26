@@ -13,7 +13,7 @@ Video                   : Okay
 Audio                   : Okay
 WLAN                    : Okay
 WLAN Hotspot            : tbd - Does not make sense if there is nothing to tether
-Keyboard                : tbd - Layouts - German, etc.
+Keyboard                : Okay - Run "/system/bin/german-keyboard.sh" as su
 			: See https://play.google.com/store/apps/details?id=com.apedroid.hwkeyboardhelper
 Bluetooth		: tbd
 Memory                  : Okay
