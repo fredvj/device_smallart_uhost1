@@ -47,6 +47,16 @@ PRODUCT_PACKAGES += \
 	lights.sun4i \
 	sensors.sun4i
 
+# CedarX libraries
+PRODUCT_PACKAGES += \
+	libCedarA \
+	libCedarX \
+	libcedarv \
+	libcedarxbase \
+	libcedarxosal \
+	libcedarxsftdemux \
+	libswdrm
+
 # Vold config, boot logo & init scripts
 
 PRODUCT_COPY_FILES += \
@@ -92,8 +102,8 @@ PRODUCT_COPY_FILES += \
         frameworks/base/data/etc/com.tmobile.software.themes.xml:system/etc/permissions/com.tmobile.software.themes.xml \
         packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:system/etc/permissions/android.software.live_wallpaper.xml
 
-PRODUCT_AAPT_CONFIG := normal large tvdpi hdpi
-PRODUCT_AAPT_PREF_CONFIG := tvdpi
+PRODUCT_AAPT_CONFIG := normal ldpi mdpi hdpi
+PRODUCT_AAPT_PREF_CONFIG := mdpi
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 PRODUCT_NAME := full_uhost1
