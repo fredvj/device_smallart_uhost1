@@ -22,7 +22,7 @@ persist.sys.strictmode.visual=0
 persist.sys.strictmode.disable=1
 hwui.render_dirty_regions=false
 media.stagefright.maxsubfont=72
-ro.sf.lcd_density=160
+ro.sf.lcd_density=213
 
 # Audio
 audio.routing=2
