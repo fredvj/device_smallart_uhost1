@@ -90,7 +90,7 @@ PRODUCT_COPY_FILES += \
 # Permissions
 
 PRODUCT_COPY_FILES += \
-        device/smallart/uhost/configuration/television_core_hardware.xml:system/etc/permissions/television_core_hardware.xml \
+        device/smallart/uhost1/configuration/television_core_hardware.xml:system/etc/permissions/television_core_hardware.xml \
         frameworks/base/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml \
         frameworks/base/data/etc/com.tmobile.software.themes.xml:system/etc/permissions/com.tmobile.software.themes.xml \
         packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:system/etc/permissions/android.software.live_wallpaper.xml
