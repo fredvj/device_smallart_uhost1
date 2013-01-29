@@ -31,6 +31,9 @@
     <feature name="android.hardware.touchscreen" />
     <feature name="android.hardware.touchscreen.multitouch" />
     <feature name="android.hardware.touchscreen.multitouch.distinct" />
+    <feature name="android.hardware.faketouch" />
+    <feature name="android.hardware.faketouch.multitouch" />
+    <feature name="android.hardware.faketouch.multitouch.distinct" />
     <feature name="android.hardware.microphone" />
     <feature name="android.hardware.screen.portrait" />
     <feature name="android.hardware.screen.landscape" / >
