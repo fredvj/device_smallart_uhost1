@@ -143,3 +143,10 @@ service uhost1_defaults /system/bin/logwrapper /system/bin/sh /system/etc/defaul
 	user root
 	disabled
 	oneshot
+
+# Network Time Demon
+
+service ntpd /system/xbin/ntpd -n -p de.pool.ntp.org
+	class main
+	user root
+
