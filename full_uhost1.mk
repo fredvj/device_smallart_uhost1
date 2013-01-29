@@ -85,6 +85,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	device/smallart/uhost1/prebuilt/qwertz.kcm:system/usr/keychars/qwertz.kcm \
 	device/smallart/uhost1/prebuilt/qwertz.kl:system/usr/keylayout/qwertz.kl \
+	device/smallart/uhost1/prebuilt/sun4i-ir.kl:system/usr/keylayout/sun4i-ir.kl \
+	device/smallart/uhost1/prebuilt/sun4i-keyboard.kl:system/usr/keylayout/sun4i-keyboard.kl \
 	device/smallart/uhost1/configuration/german-keyboard.sh:system/bin/german-keyboard.sh
 
 # Permissions

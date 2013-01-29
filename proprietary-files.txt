@@ -124,8 +124,8 @@ lib/libUMP.so
 usr/idc/ft5x_ts.idc
 
 usr/keylayout/axp20-supplyer.kl
-usr/keylayout/sun4i-ir.kl
-usr/keylayout/sun4i-keyboard.kl
+# usr/keylayout/sun4i-ir.kl
+# usr/keylayout/sun4i-keyboard.kl
 
 # OpenMax / CedarX
 
