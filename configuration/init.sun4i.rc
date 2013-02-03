@@ -59,6 +59,9 @@ on boot
 # IR driver
 	insmod /system/vendor/modules/sun4i-ir.ko
 
+# Bluetooth (USB)
+	insmod /system/vendor/modules/btusb.ko
+
 # Graphics driver (mali)
 	insmod /system/vendor/modules/ump.ko
 	insmod /system/vendor/modules/mali.ko
@@ -129,7 +132,7 @@ service iprenew_wlan0 /system/bin/dhcpcd -n
 
 # Bluetooth HCI Attach
 
-service hciattach /system/bin/hciattach -n /dev/ttyS1 any 115200
+service hciattach /system/bin/hciattach -n /dev/ttyUSB0 any 115200
 	class main
 	user root
 	group bluetooth net_bt_admin

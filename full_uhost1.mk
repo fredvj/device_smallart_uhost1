@@ -78,6 +78,7 @@ PRODUCTS_COPY_FILES += \
 # Bluetooth config
 
 PRODUCT_COPY_FILES += \
+	device/smallart/uhost1/prebuilt/btusb.ko:system/vendor/modules/btusb.ko \
         system/bluetooth/data/main.conf:system/etc/bluetooth/main.conf
 
 # Keyboard support files
