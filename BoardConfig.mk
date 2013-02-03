@@ -21,6 +21,8 @@ ARCH_ARM_HAVE_TLS_REGISTER := true
 
 TARGET_SPECIFIC_HEADER_PATH := device/smallart/uhost1/include
 
+TARGET_USE_SCORPION_BIONIC_OPTIMIZATION := true
+
 BOARD_HAS_VIBRATOR_IMPLEMENTATION := ../../device/smallart/uhost1/vibrator.c
 
 BOARD_HAVE_BLUETOOTH := true
