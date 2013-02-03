@@ -1,0 +1,21 @@
+# Prepare kernel config
+
+make defconfig sun4i_crane_defconfig
+edit .config || make menuconfig
+make
+make clean
+
+# Get kernel & module symbols
+
+adb pull /proc/kallsyms System.map
+adb pull /vendor/modules/Module.symvers
+
+# Compile new modules
+
+make modules
+
+# Compile modules in one folder
+
+armmake M=drivers/usb/serial
+armmake M=drivers/bluetooth
+
