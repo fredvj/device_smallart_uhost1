@@ -24,6 +24,8 @@ if [ "$INITIALIZED" = "" ]
 then
 	echo "Initializing defaults for Smallart Uhost1"
 
+	# Table 'system'
+
 	$SQLCMD $DATABASE "insert or replace into system(name, value) values('stay_on_while_plugged_in', '1');"
 	$SQLCMD $DATABASE "insert or replace into system(name, value) values('time_12_24', '24');"
 	$SQLCMD $DATABASE "insert or replace into system(name, value) values('status_bar_battery', '2');"
@@ -31,7 +33,11 @@ then
 	$SQLCMD $DATABASE "insert or replace into system(name, value) values('notification_sound', 'content://media/internal/audio/media/59');"
 	$SQLCMD $DATABASE "insert or replace into system(name, value) values('mock_location', '0');"
 
+	# Table 'secure'
+
 	$SQLCMD $DATABASE "insert or replace into secure(name, value) values('lockscreen.disabled', '1');"
+
+	# Write back flag - init complete
 
 	$SQLCMD $DATABASE "insert or replace into system(name, value) values('smart_tv_initialized', '1');"
 else
