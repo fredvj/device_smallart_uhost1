@@ -56,13 +56,16 @@ BOARD_KERNEL_PAGESIZE := 2048
 # fix this up by examining /proc/partitions on a running device
 BOARD_BOOTIMAGE_PARTITION_SIZE := 33554432
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 33554432
-BOARD_SYSTEMIMAGE_PARTITION_SITE := 536870912
+BOARD_SYSTEMIMAGE_PARTITION_SIZE := 536870912
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 1073741824
 BOARD_FLASH_BLOCK_SIZE := 4096
 
 # TARGET_PREBUILT_KERNEL := device/smallart/uhost1/prebuilt/kernel
 
 TARGET_USERIMAGES_USE_EXT4 := true
+
+TARGET_CUSTOM_RELEASETOOL := device/smallart/uhost1/releasetools/squisher
+TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := device/smallart/uhost1/releasetools/ota_from_target_files
 
 TARGET_RECOVERY_PRE_COMMAND := "echo -n boot-recovery | busybox dd of=/dev/block/nandf count=1 conv=sync; sync;"
 
