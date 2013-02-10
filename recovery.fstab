@@ -10,7 +10,11 @@
 
 
 # If we are booting from SD, we cannot have sd-ext
-# /sdcard     vfat        /dev/block/mmcblk0p1        /dev/block/mmcblk0
-# /sd-ext     ext4        /dev/block/mmcblk0p2
-/sdcard     vfat	/dev/block/mmcblk0p2
+# Comment first two entries for SD boot
+# Comment third for EMMC boot
+# EMMC:
+/sdcard     vfat        /dev/block/mmcblk0p1        /dev/block/mmcblk0
+/sd-ext     ext4        /dev/block/mmcblk0p2
+# SD:
+# /sdcard     vfat	/dev/block/mmcblk0p2
 
