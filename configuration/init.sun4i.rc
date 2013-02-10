@@ -97,6 +97,7 @@ on boot
 on property:sys.boot_completed=1
 # Last action is to start uhost1_defaults
 	start uhost1_defaults
+	start install_recovery
 
 # PAN, Bluetooth ReverseTether DHCP service
 
@@ -142,6 +143,14 @@ service hciattach /system/bin/hciattach -n /dev/ttyUSB0 any 115200
 # Set some defaults for the Smallart Uhost1
 
 service uhost1_defaults /system/bin/logwrapper /system/bin/sh /system/etc/default-settings.sh
+	class main
+	user root
+	disabled
+	oneshot
+
+# Try to install the recovery if it has not already been installed
+
+service install_recovery /system/bin/logwrapper /system/bin/sh /system/etc/install-recovery.sh
 	class main
 	user root
 	disabled
