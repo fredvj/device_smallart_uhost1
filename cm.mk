@@ -16,5 +16,5 @@ $(call inherit-product, device/smallart/uhost1/full_uhost1.mk)
 PRODUCT_DEVICE := uhost1
 PRODUCT_NAME := cm_uhost1
 PRODUCT_BRAND := Smallart
-PRODUCT_MODEL := UHOST1
+PRODUCT_MODEL := uHost1
 PRODUCT_MANUFACTURER := Smallart
