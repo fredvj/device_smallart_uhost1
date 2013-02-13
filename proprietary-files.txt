@@ -1,4 +1,4 @@
-# Copyright (C) 2012, fredvj
+# Copyright (C) 2012, 2013 - fredvj
 #
 
 # Kernel modules
@@ -129,11 +129,11 @@ usr/keylayout/axp20-supplyer.kl
 
 # OpenMax / CedarX
 
-lib/libCedarA.so
-lib/libcedarv.so
-lib/libcedarxbase.so
-lib/libcedarxosal.so
-lib/libCedarX.so
+# lib/libCedarA.so
+# lib/libcedarv.so
+# lib/libcedarxbase.so
+# lib/libcedarxosal.so
+# lib/libCedarX.so
 
-lib/libstagefright_soft_cedar_h264dec.so
+# lib/libstagefright_soft_cedar_h264dec.so
 
