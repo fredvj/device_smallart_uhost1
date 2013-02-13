@@ -3,18 +3,18 @@
 /boot       emmc	/dev/block/nandc
 /cache      ext4	/dev/block/nandh
 /data       ext4	/dev/block/nande
-# /misc       mtd         misc
+/misc       emmc        /dev/block/nandf
 /recovery   emmc	/dev/block/nandg
 /system     ext4        /dev/block/nandd
-/private    vfat        /dev/block/nandi
+/sdcard     auto        /dev/block/nandi	/dev/block/nandi1
 
 
 # If we are booting from SD, we cannot have sd-ext
 # Comment first two entries for SD boot
 # Comment third for EMMC boot
 # EMMC:
-/sdcard     vfat        /dev/block/mmcblk0p1        /dev/block/mmcblk0
-/sd-ext     ext4        /dev/block/mmcblk0p2
+/external_sd     vfat	/dev/block/mmcblk0p1	/dev/block/mmcblk0
+/sd-ext     auto        /dev/block/mmcblk0p2
 # SD:
-# /sdcard     vfat	/dev/block/mmcblk0p2
+# /external_sd     vfat	/dev/block/mmcblk0p2
 
