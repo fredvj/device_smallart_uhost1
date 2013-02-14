@@ -50,7 +50,7 @@ TARGET_BOOTANIMATION_TEXTURE_CACHE := true
 
 BOARD_USE_LEGACY_TOUCHSCREEN := true
 
-BOARD_KERNEL_CMDLINE := console=ttyS0,115200 rw init=/init loglevel=8
+BOARD_KERNEL_CMDLINE := console=ttyS0,115200 rw init=/init loglevel=8 androidboot.serial=66726564766a androidboot.baseband=Wifi-only androidboot.bootloader=uboot
 BOARD_KERNEL_BASE := 0x40000000
 BOARD_KERNEL_PAGESIZE := 2048
 
