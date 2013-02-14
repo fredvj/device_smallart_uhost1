@@ -67,7 +67,7 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_CUSTOM_RELEASETOOL := device/smallart/uhost1/releasetools/squisher
 TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := device/smallart/uhost1/releasetools/ota_from_target_files
 
-TARGET_RECOVERY_PRE_COMMAND := "echo -n boot-recovery | busybox dd of=/dev/block/nandf count=1 conv=sync; sync;#"
+TARGET_RECOVERY_PRE_COMMAND := "echo -n boot-recovery | busybox dd of=/dev/block/nandf count=1 conv=sync; sync; echo"
 
 #BOARD_HAS_NO_SELECT_BUTTON := true
 # Use this flag if the board has a ext4 partition larger than 2gb
