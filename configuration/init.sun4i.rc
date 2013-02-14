@@ -25,11 +25,8 @@ on fs
 	# Mount /cache
 	mount ext4 /dev/block/nandh /cache wait noatime nosuid nodev barrier=0
         
-	format_userdata /dev/block/nandk ji
-
 	# Mount /private
 	export PRIVATE_STORAGE /mnt/private
-	format_userdata /dev/block/nandi PRIVATE
 	mkdir /mnt/private 0000 system system
 	mount vfat /dev/block/nandi /mnt/private
 
