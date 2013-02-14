@@ -64,7 +64,6 @@ PRODUCT_COPY_FILES += \
         device/smallart/uhost1/configuration/init.sun4i.rc:root/init.sun4i.rc \
         device/smallart/uhost1/configuration/init.sun4i.usb.rc:root/init.sun4i.usb.rc \
         device/smallart/uhost1/configuration/ueventd.sun4i.rc:root/ueventd.sun4i.rc \
-	device/smallart/uhost1/prebuilt/boot-uhost1.rle:root/initlogo.rle \
         device/smallart/uhost1/configuration/media_profiles.xml:system/etc/media_profiles.xml \
 	device/smallart/uhost1/configuration/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
 	device/smallart/uhost1/configuration/default-settings.sh:system/etc/default-settings.sh
