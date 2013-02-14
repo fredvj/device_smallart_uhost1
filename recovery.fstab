@@ -8,10 +8,6 @@
 /system     ext4        /dev/block/nandd
 /sdcard     auto        /dev/block/nandi	/dev/block/nandi1
 
-# USB stick (OTG) - Recovery only allows hardcoded mountpoints
-
-/emmc       auto	/dev/block/sda1		/dev/block/sda
-
 # If we are booting from SD, we cannot have sd-ext
 # Comment first two entries for SD boot
 # Comment third for EMMC boot
