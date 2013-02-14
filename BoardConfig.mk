@@ -75,5 +75,7 @@ TARGET_RECOVERY_PRE_COMMAND := "echo -n boot-recovery | busybox dd of=/dev/block
 BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/smallart/uhost1/recovery/recovery_keys.c
 BOARD_CUSTOM_GRAPHICS := ../../../device/smallart/uhost1/recovery/graphics.c
 
+BOARD_UMS_LUNFILE := "/sys/devices/platform/sw_usb_udc/gadget/lun%d/file"
+
 TARGET_KERNEL_SOURCE := kernel/allwinner/common
 TARGET_KERNEL_CONFIG := sun4i_crane_defconfig
