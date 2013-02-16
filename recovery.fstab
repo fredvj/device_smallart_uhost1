@@ -6,7 +6,7 @@
 /misc       emmc        /dev/block/nandf
 /recovery   emmc	/dev/block/nandg
 /system     ext4        /dev/block/nandd
-/sdcard     auto        /dev/block/nandi	/dev/block/nandi1
+/sdcard     auto        /dev/block/nandk	/dev/block/nandk1
 
 # If we are booting from SD, we cannot have sd-ext
 # Comment first two entries for SD boot
