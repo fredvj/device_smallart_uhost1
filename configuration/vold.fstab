@@ -1,4 +1,4 @@
-## Vold 2.0 fstab for HTC Passion
+## Vold 2.0 fstab for Smallart uHost1
 #
 ## - San Mehat (san@android.com)
 ## 
@@ -13,7 +13,6 @@
 ######################
 
 # Mounts the first usable partition of the specified device
-#/devices/platform/awsmc.3/mmc_host for sdio
 dev_mount	sata	/mnt/sata	auto	/devices/platform/sw_ahci.0
 dev_mount	sdcard	/mnt/sdcard	auto	/devices/virtual/block/nandk
 dev_mount	extsd	/mnt/extsd	auto	/devices/platform/sunxi-mmc.0/mmc_host
