@@ -93,14 +93,18 @@ PRODUCT_COPY_FILES += \
 # Permissions
 
 PRODUCT_COPY_FILES += \
-        device/smallart/uhost1/configuration/television_core_hardware.xml:system/etc/permissions/television_core_hardware.xml \
+        device/smallart/uhost1/configuration/television_core_hardware.xml:system/etc/permissions/tablet_core_hardware.xml \
+	device/smallart/uhost1/configuration/television_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
         frameworks/base/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml \
         frameworks/base/data/etc/com.tmobile.software.themes.xml:system/etc/permissions/com.tmobile.software.themes.xml \
         packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:system/etc/permissions/android.software.live_wallpaper.xml
 
 PRODUCT_AAPT_CONFIG := normal ldpi mdpi hdpi
 PRODUCT_AAPT_PREF_CONFIG := hdpi
+PRODUCT_LOCALES += hdpi
 
-PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
-PRODUCT_NAME := full_uhost1
-PRODUCT_DEVICE := uhost1
+PRODUCT_BUILD_PROP_OVERRIDES += \
+	BUILD_UTC_DATE=0 \
+	PRODUCT_BRAND=samsung \
+	PRODUCT_MANUFACTURER=samsung \
+	PRODUCT_NAME=GT-P1000

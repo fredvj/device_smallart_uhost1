@@ -15,6 +15,6 @@ $(call inherit-product, device/smallart/uhost1/full_uhost1.mk)
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := uhost1
 PRODUCT_NAME := cm_uhost1
-PRODUCT_BRAND := Smallart
+PRODUCT_BRAND := smallart
 PRODUCT_MODEL := uHost1
-PRODUCT_MANUFACTURER := Smallart
+PRODUCT_MANUFACTURER := smallart
