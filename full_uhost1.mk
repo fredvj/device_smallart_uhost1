@@ -1,15 +1,20 @@
+# Include all languages
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
+
+# Include full feature set
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full.mk)
 
 # The gps config appropriate for this device
 $(call inherit-product, device/common/gps/gps_eu_supl.mk)
 
+# Inherit dalvik parameters
+$(call inherit-product, frameworks/base/build/tablet-dalvik-heap.mk)
+
+# Include vendor specific things - if existent
 $(call inherit-product-if-exists, vendor/smallart/uhost1/uhost1-vendor.mk)
 
 DEVICE_PACKAGE_OVERLAYS := \
 	device/smallart/uhost1/overlay
-
-# Inherit dalvik parameters
-$(call inherit-product, frameworks/base/build/tablet-dalvik-heap.mk)
 
 LOCAL_PATH := device/smallart/uhost1
 ifeq ($(TARGET_PREBUILT_KERNEL),)
@@ -24,8 +29,6 @@ PRODUCT_TAGS += dalvik.gc.type-precise
 
 PRODUCT_COPY_FILES += \
 	$(LOCAL_KERNEL):kernel
-
-$(call inherit-product, build/target/product/full.mk)
 
 PRODUCT_PACKAGES += \
 	make_ext4fs \
