@@ -89,6 +89,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	device/smallart/uhost1/prebuilt/tun.ko:system/vendor/modules/tun.ko
 
+# OpenVPN settings
+
+PRODUCT_COPY_FILES += \
+	device/smallart/uhost1/prebuilt/OpenVPNSettings.apk:system/app/OpenVPNSettings.apk
+
 # Keyboard support files
 
 PRODUCT_COPY_FILES += \
