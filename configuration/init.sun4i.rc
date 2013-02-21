@@ -50,6 +50,9 @@ on post-fs-data
 	mkdir /data/misc/dhcp 0771 dhcp dhcp
 
 on boot
+# Some apps are trying to load modules in /system/lib/modules - create a link
+        symlink /system/vendor/modules /system/lib/modules
+
 # Touchpad driver
 	insmod /system/vendor/modules/ft5x_ts.ko
 
