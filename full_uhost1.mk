@@ -84,6 +84,11 @@ PRODUCT_COPY_FILES += \
 	device/smallart/uhost1/prebuilt/btusb.ko:system/vendor/modules/btusb.ko \
         system/bluetooth/data/main.conf:system/etc/bluetooth/main.conf
 
+# Universal TUN/TAP device
+
+PRODUCT_COPY_FILES += \
+	device/smallart/uhost1/prebuilt/tun.ko:system/vendor/modules/tun.ko
+
 # Keyboard support files
 
 PRODUCT_COPY_FILES += \
